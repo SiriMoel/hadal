@@ -1,0 +1,13 @@
+-- STAGES
+
+# | BIOMES | ORB REQ TO PROGRESS (total) | SIDE BIOMES
+1 - mines & collapsed mines - 0 - none
+2 - coal mines & fungal caverns - 1 - sandcave (and possibly altered pyramid?)
+3 - snowy depths & hiisi base - 2 - abandoned laboratory
+4 - snowcave + more - 4 - idk
+5 - jungle + lukki lair + vault - 7 - 
+
+11 total
+
+power plant somewhere
+OC somewhere BUT SIGNIFICANTLY CHANGED

@@ -1,0 +1,14 @@
+<Mod
+name="Hadal Difficulty"
+description="
+FEATURES
+- wand crafting mechanic (no more finding wands)
+- orbs required to progress (cope)
+- new map (seethe)
+- pain (pain)
+"
+tags="gameplay"
+dont_upload_folders=".assets" 
+dont_upload_files=""
+>
+</Mod>
