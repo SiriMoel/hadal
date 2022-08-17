@@ -1,8 +1,13 @@
-<Entity tags="wandcore">
+<Entity tags="hittable,teleportable_NOT,item_physics,item_pickup,wandcore">
 
 	<UIInfoComponent
 		name="Wand Core"
 	></UIInfoComponent>
+
+    <AbilityComponent
+        throw_as_item="1"
+        use_gun_script="0"
+    ></AbilityComponent>
 
 	<PhysicsBodyComponent 
 		_tags="enabled_in_world"
@@ -46,7 +51,7 @@
 		max_child_items="0"
 		is_pickable="1"
 		is_equipable_forced="1"
-		ui_sprite="mods/hadal/files/entities/items/wandcores/sprites/wc_ui.png"
+		ui_sprite="mods/hadal/files/entities/items/wandcores/sprites/wc.png"
 		preferred_inventory="QUICK"
 		item_name="A magical stone."
 		ui_description="A magical stone."
@@ -80,7 +85,7 @@
 	
 	<ParticleEmitterComponent 
 		_tags="enabled_in_world,enabled_in_hand"
-		emitted_material_name="spark_green"
+		emitted_material_name="magic_liquid_mana_regeneration"
 		offset.x="0"
 		offset.y="0"
 		x_pos_offset_min="0"
@@ -91,15 +96,15 @@
 		x_vel_max="0"
 		y_vel_min="0"
 		y_vel_max="0"
-		count_min="1"
-		count_max="1"
+		count_min="5"
+		count_max="10"
 		emission_interval_min_frames="1"
 		emission_interval_max_frames="3"
-		area_circle_radius.max="6"
+		area_circle_radius.max="12"
 		emit_cosmetic_particles="1"
 		create_real_particles="0"
-		lifetime_min="2.5"
-		lifetime_max="6.5"
+		lifetime_min="3.5"
+		lifetime_max="7.5"
 		render_on_grid="1"
 		fade_based_on_lifetime="1"
 		airflow_force="0.5"
@@ -120,16 +125,22 @@
 	</AbilityComponent>
 
     <VariableStorageComponent
-		_tags="runes_list"
-		name="runes_list"
-		value_string=""
+		_tags="wand_handle"
+		name="wand_handle"
+		value_string="empty"
 		>
 	</VariableStorageComponent>
-	
+
+	<VariableStorageComponent
+		_tags="wand_brace"
+		name="wand_brace"
+		value_string="empty"
+		>
+	</VariableStorageComponent>
 
     <LuaComponent
 		script_source_file="mods/hadal/files/entities/items/wandcores/_.lua"
-		execute_every_n_frame="10"
+		execute_every_n_frame="3"
 		>
 	</LuaComponent>
 
