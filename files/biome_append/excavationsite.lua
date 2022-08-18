@@ -31,4 +31,7 @@ items = {
 
 }
 
-g_items = { unpack(items)}
+g_items = {}
+for k, v in pairs(items) do
+	g_items[k] = v;
+end
