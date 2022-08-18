@@ -2,12 +2,12 @@ dofile_once("data/scripts/lib/utilities.lua")
 dofile_once("data/scripts/gun/procedural/gun_procedural.lua")
 
 local core_id = GetUpdatedEntityID()
-local x, y = EntityGetTransform( entity_id )
+local x, y = EntityGetTransform( core_id )
 local radius = 10
 
 local handlecomp = EntityGetComponent( core_id, "VariableStorageComponent", "wand_handle" )
 local bracecomp = EntityGetComponent( core_id, "VariableStorageComponent", "wand_brace" )
-local coretier = ComponentGetValue( EntityGetComponent( core_id, "VariableStorageComponent", "core_tier" ), "value_string" )
+local coretier = tonumber(ComponentGetValue( EntityGetComponent( core_id, "VariableStorageComponent", "core_tier" ), "value_string" ))
 
 if ComponentGetValue( handlecomp, "value_string" ) == "empty" then
     local handle = EntityGetInRadiusWithTag( x, y, radius, "wandhandle" )[1]

@@ -2,14 +2,19 @@
 
 # | BIOMES | ORB REQ TO PROGRESS (total) | SIDE BIOMES
 1 - mines & collapsed mines - 0 - none
-2 - coal mines & fungal caverns - 1 - sandcave (and possibly altered pyramid?)
-3 - snowy depths & hiisi base - 2 - abandoned laboratory
+2 - coal mines & fungal caverns - 2 - sandcave (and possibly altered pyramid?)
+3 - snowy depths & hiisi base - 3 - abandoned laboratory
 4 - snowcave + more - 4 - idk
-5 - jungle + lukki lair + vault - 7 - 
+5 - jungle + lukki lair + vault - 6 -
+6 - tota - 7 - 
+7 - wizards den - 8 -
+
+KOLMI 
 
 11 total
 
 power plant somewhere
 OC somewhere BUT SIGNIFICANTLY CHANGED
 
-MAKE WAND CORE LOOK LIKE BLUE ROCK (like the one in the wands yk)
+MAKE WAND CORE LOOK LIKE BLUE ROCK (like the one in the wands)
+SPRITES FOR WAND PARTS, WAND CORE SPRITE CHANGE BASED OFF WHAT PART IS ON IT
