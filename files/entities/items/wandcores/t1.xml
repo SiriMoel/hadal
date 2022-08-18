@@ -1,5 +1,5 @@
 <Entity tags="wandcore">
-	<Base file="mods/hadal/files/entities/items/base.xml">
+	<Base file="mods/hadal/files/entities/items/wandcores/base.xml">
 
 	<UIInfoComponent
 		name="Wand Core - I"

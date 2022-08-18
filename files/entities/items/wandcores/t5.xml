@@ -1,14 +1,14 @@
 <Entity tags="wandcore">
-	<Base file="mods/hadal/files/entities/items/wandcores/base.xml">
+	<Base file="mods/hadal/files/entities/items/base.xml">
 
 	<UIInfoComponent
-		name="Wand Core - II"
+		name="Wand Core - V"
 	></UIInfoComponent>
 
 	<VariableStorageComponent
 		_tags="core_tier"
 		name="core_tier"
-		value_string="2"
+		value_string="5"
 		>
 	</VariableStorageComponent>
 

@@ -21,10 +21,6 @@ function OnPlayerSpawned( player_entity )
             value_string="0",
         } )
     end]]--
-    if GameHasFlagRun("hadal_brickwork_changed") == false then
-
-        GameAddFlagRun("hadal_brickwork_changed")
-    end
 end
 
 --spell changes
