@@ -1,4 +1,4 @@
-<Entity tags="hittable,teleportable_NOT,item_physics,item_pickup,wandhandle" >
+<Entity tags="hittable,teleportable_NOT,item_physics,item_pickup,wandhandle,hadal_wandpart" >
 	<Base file="data/entities/base_item_projectile.xml" />
 	
 	<PhysicsBodyComponent 
@@ -17,8 +17,8 @@
 	<PhysicsImageShapeComponent 
 		body_id="1"
 		centered="1"
-		image_file="data/items_gfx/goldnugget_01.png"
-		material="gem_box2d_turquoise"
+		image_file="mods/hadal/files/entities/items/wandcores/sprites/handle_in_hand.png"
+		material="rock_box2d_hard"
 	></PhysicsImageShapeComponent>
 	
 	<PhysicsThrowableComponent

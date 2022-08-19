@@ -1,4 +1,4 @@
-<Entity tags="hadalwand">
+<Entity tags="wand,hadalwand">
 
     <Base file="data/entities/base_wand_physics.xml">
         <SpriteComponent 

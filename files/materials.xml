@@ -22,7 +22,14 @@
 	>
     <Graphics
 		texture_file="data/materials_gfx/templerock.png"
-		color="ff6F5439"
+		
+	>
+    </Graphics>
+  </CellData>
+
+</Materials>
+
+<!--color="ff6F5439"
 		pixel_all_around="ff6F5439"
 
 		pixel_lonely="ff6F5439"
@@ -36,8 +43,4 @@
 		pixel_right="ff543F2B"
 		pixel_bottom="ff543F2B"
 		pixel_bottom_right="ff543F2B"
-	>
-    </Graphics>
-  </CellData>
-
-</Materials>
+-->

@@ -7,7 +7,7 @@ RegisterSpawnFunction( 0xffffeedd, "init" )
 RegisterSpawnFunction( 0xff00b665, "portal" )
 
 function init( x, y, w, h )
-	LoadPixelScene( "mods/hadal/files/biome/temple/temple_top_real.png", "mods/hadal/files/biome/temple/temple_top.png", x, y-40, "", true )
+	LoadPixelScene( "mods/hadal/files/biome/temple/temple_top_real.png", "mods/hadal/files/biome/temple/temple_top_visual.png", x, y-40, "", true )
 
 	LoadPixelScene( "mods/hadal/files/biome/temple/temple.png", "mods/hadal/files/biome/temple/temple_visual.png", x, y-40+300, "mods/hadal/files/biome/temple/temple_background.png", true )
 end

@@ -1,14 +1,5 @@
 <Entity tags="hittable,teleportable_NOT,item_physics,item_pickup,wandcore">
-
-	<UIInfoComponent
-		name="Wand Core"
-	></UIInfoComponent>
-
-    <AbilityComponent
-        throw_as_item="1"
-        use_gun_script="0"
-    ></AbilityComponent>
-
+	
 	<PhysicsBodyComponent 
 		_tags="enabled_in_world"
 		uid="1" 
@@ -26,7 +17,7 @@
 	<PhysicsImageShapeComponent 
 		body_id="1"
 		centered="1"
-		image_file="mods/hadal/files/entities/items/wandcores/sprites/wc.png"
+		image_file="mods/hadal/files/entities/items/wandcores/sprites/wc_in_hand.png"
 		material="rock_box2d_hard"
 	></PhysicsImageShapeComponent>
 
@@ -53,7 +44,7 @@
 		is_equipable_forced="1"
 		ui_sprite="mods/hadal/files/entities/items/wandcores/sprites/wc.png"
 		preferred_inventory="QUICK"
-		item_name="A magical stone."
+		item_name="Wand Core"
 		ui_description="A magical stone."
 	></ItemComponent>
   
@@ -96,11 +87,11 @@
 		x_vel_max="0"
 		y_vel_min="0"
 		y_vel_max="0"
-		count_min="5"
-		count_max="10"
+		count_min="1"
+		count_max="3"
 		emission_interval_min_frames="1"
 		emission_interval_max_frames="3"
-		area_circle_radius.max="12"
+		area_circle_radius.max="3"
 		emit_cosmetic_particles="1"
 		create_real_particles="0"
 		lifetime_min="3.5"
@@ -115,32 +106,10 @@
 		render_back="1"
 		>
 	</ParticleEmitterComponent>
-	
-	<AbilityComponent
-		ui_name="Wand Core"
-		throw_as_item="1"
-		><gun_config
-			deck_capacity="0"
-		></gun_config>
-	</AbilityComponent>
 
-    <VariableStorageComponent
-		_tags="wand_handle"
-		name="wand_handle"
-		value_string="empty"
-		>
-	</VariableStorageComponent>
-
-	<VariableStorageComponent
-		_tags="wand_brace"
-		name="wand_brace"
-		value_string="empty"
-		>
-	</VariableStorageComponent>
-
-    <LuaComponent
+	<LuaComponent
 		script_source_file="mods/hadal/files/entities/items/wandcores/_.lua"
-		execute_every_n_frame="3"
+		execute_every_n_frame="2"
 		>
 	</LuaComponent>
 

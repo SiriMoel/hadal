@@ -3,21 +3,15 @@ dofile_once("data/scripts/gun/procedural/gun_procedural.lua")
 
 local core_id = GetUpdatedEntityID()
 local x, y = EntityGetTransform( core_id )
-local radius = 15
 
---local handlecomp = EntityGetComponent( core_id, "VariableStorageComponent", "wand_handle" )
---local bracecomp = EntityGetComponent( core_id, "VariableStorageComponent", "wand_brace" )
+local handlecomp = EntityGetComponent( core_id, "VariableStorageComponent", "wand_handle" )
+local bracecomp = EntityGetComponent( core_id, "VariableStorageComponent", "wand_brace" )
 local ctier = ComponentGetValue2( EntityGetComponent( core_id, "VariableStorageComponent", "core_tier" ), "value_string" )
 local coretier = tonumber(ctier)
 
-local handle = EntityGetInRadiusWithTag( x, y, radius, "wandhandle" )[1]
-local brace = EntityGetInRadiusWithTag( x, y, radius, "wandbrace" )[1]
-
-if handle ~= nil and brace ~= nil then
+if ComponentGetValue2( handlecomp, "value_string" ) == "handle" and ComponentGetValue2( bracecomp, "value_string" ) == "brace" then
     EntityLoad("mods/hadal/files/entities/items/wandcores/_wand.xml", x, y)
     hadal_wand(25 * coretier, coretier, false)
-    EntityKill(handle)
-    EntityKill(brace)
     EntityKill(core_id)
     GamePrint("Wand created!")
 end
