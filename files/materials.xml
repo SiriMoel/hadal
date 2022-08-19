@@ -7,7 +7,7 @@
 	burnable="0"
 	density="10"
 	cell_type="liquid"
-	wang_color="ff6F5439"
+	wang_color="ff786C50"
 	liquid_gravity="1.2"
 	liquid_sand="1"
 	liquid_static="1"

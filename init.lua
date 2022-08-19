@@ -14,13 +14,7 @@ xml:add_children(nxml.parse_many[[
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
 
 function OnPlayerSpawned( player_entity )
-    --[[if GameHasFlagRun("hadalmountaincomp") == false then
-        EntityAddComponent( player_entity, "VariableStorageComponent", {
-            _tags="hadalmountains",
-            name="hadalmountains",
-            value_string="0",
-        } )
-    end]]--
+
 end
 
 --spell changes
@@ -31,3 +25,9 @@ ModTextFileSetContent("data/scripts/projectiles/black_hole_gravity.lua", "mods/h
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )
 ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/hadal/files/biome_append/coalmine_alt.lua" )
 ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/hadal/files/biome_append/excavationsite.lua" )
+ModLuaFileAppend( "data/scripts/biomes/fungicave.lua", "mods/hadal/files/biome_append/fungicave.lua" )
+ModLuaFileAppend( "data/scripts/biomes/snowcave.lua", "mods/hadal/files/biome_append/snowcave.lua" )
+ModLuaFileAppend( "data/scripts/biomes/snowcastle.lua", "mods/hadal/files/biome_append/snowcastle.lua" )
+ModLuaFileAppend( "data/scripts/biomes/winter_caves.lua", "mods/hadal/files/biome_append/winter_caves.lua" )
+ModLuaFileAppend( "data/scripts/biomes/winter.lua", "mods/hadal/files/biome_append/winter_caves.lua" )
+ModLuaFileAppend( "data/scripts/biomes/vault_frozen.lua", "mods/hadal/files/biome_append/vault_frozen.lua" )
