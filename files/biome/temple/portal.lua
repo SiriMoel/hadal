@@ -29,7 +29,7 @@ if orbcount >= orbreq then
     if player == nil then return end
     EntitySetTransform( player, dx, dy )
     mountaincount = mountaincount + 1
-    GamePrint("You have been to " .. mountains .. " Holy Mountains now." )
+    GamePrint("You have been to " .. mountaincount .. " Holy Mountains now." )
     GamePrint("You will need " .. orbreq .. " orbs to enter the next Mountain.")
     GlobalsSetValue("hadalmoutnains", tostring(mountaincount))
 else   
