@@ -5,30 +5,26 @@ local core_id = GetUpdatedEntityID()
 local x, y = EntityGetTransform( core_id )
 local radius = 15
 
---local handlecomp = EntityGetComponent( core_id, "VariableStorageComponent", "wand_handle" )
---local bracecomp = EntityGetComponent( core_id, "VariableStorageComponent", "wand_brace" )
-local ctier = ComponentGetValue2( EntityGetComponent( core_id, "VariableStorageComponent", "core_tier" ), "value_string" )
-local coretier = tonumber(ctier)
-
+print(EntityGetTags(GetUpdatedEntityID()))
+local coretier = tonumber(string.match(string.match(EntityGetTags(GetUpdatedEntityID()), "wandcore_t%d+"), "%d+"))
 local handle = EntityGetInRadiusWithTag( x, y, radius, "wandhandle" )[1]
 local brace = EntityGetInRadiusWithTag( x, y, radius, "wandbrace" )[1]
 
+print(tostring(coretier))
+if coretier == nil then
+    print("coretier fel of")
+    return;
+end
 if handle ~= nil and brace ~= nil then
-    EntityLoad("mods/hadal/files/entities/items/wandcores/_wand.xml", x, y)
-    hadal_wand(25 * coretier, coretier, false)
+    local wand = EntityLoad("mods/hadal/files/entities/items/wandcores/_wand.xml", x, y)
+    if EntityHasTag( wand, "hadalbuilt" ) == true then return end
+	SetRandomSeed( x, y )
+	local gun = get_gun_data( 25 * coretier, coretier, false )
+	make_wand_from_gun_data( gun, wand, coretier )
+	wand_add_random_cards( gun, wand, coretier )
+    EntityAddTag( wand, "hadalbuilt")
     EntityKill(handle)
     EntityKill(brace)
     EntityKill(core_id)
     GamePrint("Wand created!")
-end
-
-function hadal_wand( cost, level, force_unshuffle ) --modified generate_gun()
-	local wand = EntityGetInRadiusWithTag( x, y, radius, "hadalwand")[1]
-    if EntityHasTag( wand, "hadalbuilt" ) == true then return end
-	SetRandomSeed( x, y )
-
-	local gun = get_gun_data( cost, level, force_unshuffle )
-	make_wand_from_gun_data( gun, wand, level )
-	wand_add_random_cards( gun, wand, level )
-    EntityAddTag( wand, "hadalbuilt")
 end

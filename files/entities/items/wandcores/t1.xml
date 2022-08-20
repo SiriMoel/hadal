@@ -1,13 +1,6 @@
-<Entity tags="hittable,teleportable_NOT,item_physics,item_pickup,wandcore" >
+<Entity tags="hittable,teleportable_NOT,item_physics,item_pickup,wandcore,wandcore_t1">
 	<Base file="data/entities/base_item_projectile.xml" />
 
-	<VariableStorageComponent
-		_tags="core_tier"
-		name="core_tier"
-		value_string="1"
-		>
-	</VariableStorageComponent>
-	
 	<PhysicsBodyComponent 
 		_tags="enabled_in_world"
 		uid="1" 
