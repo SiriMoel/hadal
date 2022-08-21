@@ -10,7 +10,6 @@ local coretier = tonumber(string.match(string.match(EntityGetTags(GetUpdatedEnti
 local handle = EntityGetInRadiusWithTag( x, y, radius, "wandhandle" )[1]
 local brace = EntityGetInRadiusWithTag( x, y, radius, "wandbrace" )[1]
 
-print(tostring(coretier))
 if coretier == nil then
     print("coretier fel of")
     return;
