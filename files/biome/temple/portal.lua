@@ -6,8 +6,6 @@ local radius = 12
 local player = EntityGetInRadiusWithTag( x, y, radius, "player_unit" )[1]
 local orbcount = GameGetOrbCountThisRun()
 
---local mountaincomp = EntityGetComponent( player, "VariableStorageComponent", "hadalmountains" )
---local mountaincount = tonumber(ComponentGetValue( EntityGetComponent( player, "VariableStorageComponent", "hadalmountains" ), "value_string" ))
 if GlobalsGetValue("hadalmountains") == nil then
     GlobalsSetValue("hadalmountains", "0")
 end
@@ -15,7 +13,7 @@ end
 local mountaincount = tonumber(GlobalsGetValue("hadalmountains"))
 
 if mountaincount == nil then 
-    mountaincount = 0
+    mountaincount = 0 
 end
 
 local orbreq = 0 + mountaincount * 1.3
@@ -31,7 +29,7 @@ if orbcount >= orbreq then
     mountaincount = mountaincount + 1
     GamePrint("You have been to " .. mountaincount .. " Holy Mountains now." )
     GamePrint("You will need " .. orbreq .. " orbs to enter the next Mountain.")
-    GlobalsSetValue("hadalmoutnains", tostring(mountaincount))
+    GlobalsSetValue("hadalmountains", tostring(mountaincount))
 else   
     GamePrint("You do not have enough orbs.")
 end
