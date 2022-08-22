@@ -93,6 +93,9 @@ end
 
 function hadal_item( x, y )
 	local mcount = tonumber(GlobalsGetValue("hadalmountains")) -- mountain count
+	if mcount == nil then 
+		mcount = 0 
+	end
 	SetRandomSeed( x, y )
 	local level = mcount + 1
 	local is_stealable = false

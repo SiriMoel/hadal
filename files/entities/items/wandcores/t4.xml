@@ -1,8 +1,113 @@
-<Entity tags="wandcore,wandcore_t4">
-	<Base file="mods/hadal/files/entities/items/wandcores/base.xml">
+<Entity tags="hittable,teleportable_NOT,item_physics,item_pickup,wandcore,wandcore_t1">
+	<Base file="data/entities/base_item_projectile.xml" />
+
+	<PhysicsBodyComponent 
+		_tags="enabled_in_world"
+		uid="1" 
+		allow_sleep="1" 
+		angular_damping="0" 
+		fixed_rotation="0" 
+		is_bullet="1" 
+		linear_damping="0"
+		auto_clean="0"
+		on_death_leave_physics_body="1"
+		hax_fix_going_through_ground="1"
+	></PhysicsBodyComponent>
+	
+	<PhysicsImageShapeComponent 
+		body_id="1"
+		centered="1"
+		image_file="mods/hadal/files/entities/items/wandcores/sprites/wc_in_hand.png"
+		material="rock_box2d_hard"
+	></PhysicsImageShapeComponent>
+	
+	
+	<PhysicsThrowableComponent
+		max_throw_speed="180"
+		throw_force_coeff="1.5"
+	></PhysicsThrowableComponent>
+
+	<VelocityComponent
+		_tags="enabled_in_world"
+	></VelocityComponent>
+
+	<SpriteComponent
+		_tags="enabled_in_hand"
+		_enabled="0"
+		offset_x="4"
+		offset_y="4"
+		image_file="mods/hadal/files/entities/items/wandcores/sprites/wc_in_hand.png"
+	></SpriteComponent>
+
+	<SpriteComponent
+		_tags="enabled_in_world"
+		_enabled="0"
+		offset_x="4"
+		offset_y="4"
+		image_file="mods/hadal/files/entities/items/wandcores/sprites/wc_in_hand.png"
+	></SpriteComponent>
+
+	<ItemComponent
+		_tags="enabled_in_world"
+		item_name="Wand Core - IV"
+		ui_description="Can be used to create a wand."
+		ui_sprite="mods/hadal/files/entities/items/wandcores/sprites/wc.png"
+		max_child_items="0"
+		is_pickable="1"
+		is_equipable_forced="1"
+		preferred_inventory="QUICK"
+	></ItemComponent>
 
 	<UIInfoComponent
-		name="Wand Core - IV"
-	></UIInfoComponent>
-	</Base>
+		_tags="enabled_in_world"
+		name="Wand Core - IV">
+	</UIInfoComponent>
+	
+	<AbilityComponent
+		ui_name="Wand Core - IV"
+		throw_as_item="1"
+		><gun_config
+			deck_capacity="0"
+		></gun_config>
+	</AbilityComponent>
+
+		<ParticleEmitterComponent 
+		_tags="enabled_in_world,enabled_in_hand"
+		emitted_material_name="magic_liquid_mana_regeneration"
+		offset.x="0"
+		offset.y="0"
+		x_pos_offset_min="0"
+		x_pos_offset_max="0"
+		y_pos_offset_min="0"
+		y_pos_offset_max="0"
+		x_vel_min="0"
+		x_vel_max="0"
+		y_vel_min="0"
+		y_vel_max="0"
+		count_min="1"
+		count_max="3"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="3"
+		area_circle_radius.max="3"
+		emit_cosmetic_particles="1"
+		create_real_particles="0"
+		lifetime_min="3.5"
+		lifetime_max="7.5"
+		render_on_grid="1"
+		fade_based_on_lifetime="1"
+		airflow_force="0.5"
+		airflow_time="0.01"
+		airflow_scale="0.05"
+		collide_with_grid="0"
+		gravity.y="0.0"
+		render_back="1"
+		>
+	</ParticleEmitterComponent>
+
+	<LuaComponent
+		script_source_file="mods/hadal/files/entities/items/wandcores/_.lua"
+		execute_every_n_frame="2"
+		>
+	</LuaComponent>
+	
 </Entity>

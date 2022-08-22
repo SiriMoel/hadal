@@ -1,6 +1,6 @@
 dofile_once("data/scripts/lib/utilities.lua")
 
-local timer = GetUpdatedEntityId()
+local timer = GetUpdatedEntityID()
 local x, y = EntityGetTransform(timer)
 
 local radius = 200
