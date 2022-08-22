@@ -5,6 +5,7 @@ dofile_once("data/scripts/biome_scripts.lua")
 dofile_once("data/scripts/lib/utilities.lua")
 dofile( "data/scripts/gun/gun_actions.lua" )
 dofile( "mods/hadal/files/entities/items/templewands/_.lua" )
+dofile( "data/scripts/perks/perk.lua" )
 
 RegisterSpawnFunction( 0xffffeedd, "init" )
 RegisterSpawnFunction( 0xff00b665, "portal" )
@@ -13,6 +14,47 @@ RegisterSpawnFunction( 0xff5a822d, "spawn_workshop_extra" )
 RegisterSpawnFunction( 0xff6d934c, "spawn_hp" )
 RegisterSpawnFunction( 0xffc1b0ff, "hadal_item" )
 RegisterSpawnFunction( 0xffffb27f, "hwand" )
+RegisterSpawnFunction( 0xff80FF5A, "spawn_vines" )
+RegisterSpawnFunction( 0xffff5a0a, "spawn_perk" )
+
+g_vines =
+{
+	total_prob = 0,
+	{
+		prob   		= 0.5,
+		min_count	= 1,
+		max_count	= 1,    
+		entity 	= ""
+	},
+	{
+		prob   		= 0.4,
+		min_count	= 1,
+		max_count	= 1,    
+		entity 	= "data/entities/verlet_chains/vines/verlet_vine.xml"
+	},
+	{
+		prob   		= 0.3,
+		min_count	= 1,
+		max_count	= 1,    
+		entity 	= "data/entities/verlet_chains/vines/verlet_vine_long.xml"
+	},
+	{
+		prob   		= 0.2,
+		min_count	= 1,
+		max_count	= 1,    
+		entity 	= "data/entities/verlet_chains/vines/verlet_vine_short.xml"
+	},
+	{
+		prob   		= 0.2,
+		min_count	= 1,
+		max_count	= 1,    
+		entity 	= "data/entities/verlet_chains/vines/verlet_vine_shorter.xml"
+	},
+}
+
+function spawn_vines(x, y)
+	spawn(g_vines,x+5,y+5)
+end
 
 function init( x, y, w, h )
 	LoadPixelScene( "mods/hadal/files/biome/temple/temple_top_real.png", "mods/hadal/files/biome/temple/temple_top_visual.png", x, y-40, "", true )
@@ -42,6 +84,11 @@ function hwand( x, y )
 	local wand = hwands[wandnumber]
 
 	EntityLoad( wand, x, y )
+end
+
+function spawn_perk( x, y )
+	SetRandomSeed( x, y )
+	perk_spawn_random( x, y )
 end
 
 function hadal_item( x, y )

@@ -1,0 +1,15 @@
+<Entity tags="stevetimer">
+
+    <ProjectileComponent
+        lifetime="3600"
+    >
+    </ProjectileComponent>
+
+    <LuaComponent
+    script_source_file="mods/hadal/files/biome/temple/steve_timer_expire.lua"
+    execute_every_n_frame="-1"
+    execute_on_removed="1"
+    >
+    </LuaComponent>
+    
+</Entity>
