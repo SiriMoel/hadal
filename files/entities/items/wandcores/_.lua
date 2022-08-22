@@ -5,7 +5,6 @@ local core_id = GetUpdatedEntityID()
 local x, y = EntityGetTransform( core_id )
 local radius = 15
 
-print(EntityGetTags(GetUpdatedEntityID()))
 local coretier = tonumber(string.match(string.match(EntityGetTags(GetUpdatedEntityID()), "wandcore_t%d+"), "%d+"))
 local handle = EntityGetInRadiusWithTag( x, y, radius, "wandhandle" )[1]
 local brace = EntityGetInRadiusWithTag( x, y, radius, "wandbrace" )[1]

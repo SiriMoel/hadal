@@ -76,7 +76,7 @@ end
 
 function spawn_hp( x, y )
 	EntityLoad( "data/entities/items/pickup/heart_fullhp_temple.xml", x-16, y )
-	EntityLoad( "data/entities/items/pickup/heart_refresh.xml", x+16, y )
+	EntityLoad( "data/entities/items/pickup/spell_refresh.xml", x+16, y )
 end
 
 function hwand( x, y )

@@ -13,15 +13,15 @@ end
 local mountaincount = tonumber(GlobalsGetValue("hadalmountains"))
 
 if mountaincount == nil then 
-    mountaincount = 0 
+    GlobalsSetValue("hadalmountains", "0")
+    mountaincount = 0
 end
 
-local orbreq = 0 + mountaincount * 1.3
+local orbreq = 0 + (mountaincount * 1.3)
 
 -- destination coords
 local dx = x
 local dy = y + 300
-
 -- orb
 if orbcount >= orbreq then
     if player == nil then return end
