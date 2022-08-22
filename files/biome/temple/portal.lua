@@ -5,7 +5,7 @@ local x, y = EntityGetTransform( portal_id )
 local radius = 12
 local player = EntityGetInRadiusWithTag( x, y, radius, "player_unit" )[1]
 local orbcount = GameGetOrbCountThisRun()
-
+if player == nil then return end
 if GlobalsGetValue("hadalmountains") == nil then
     GlobalsSetValue("hadalmountains", "0")
 end
