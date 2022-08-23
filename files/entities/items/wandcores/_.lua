@@ -11,7 +11,7 @@ local brace = EntityGetInRadiusWithTag( x, y, radius, "wandbrace" )[1]
 
 if coretier == nil then
     print("coretier fel of")
-    return;
+    return
 end
 if handle ~= nil and brace ~= nil then
     local wand = EntityLoad("mods/hadal/files/entities/items/wandcores/_wand.xml", x, y)

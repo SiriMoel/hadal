@@ -8,7 +8,6 @@ local radius = 200
 local player = EntityGetInRadiusWithTag( x, y, radius, "player_unit" )[1]
 
 if player ~= nil then
-    GamePrintImportant( "You are to slow!", "This is so sad." )
-    GamePrint("nothing yet. you are safe for now")
-    --EntityLoad( "", x, y )
+    GamePrintImportant( "You are too slow!", "This is so sad." )
+    EntityLoad( "mods/hadal/files/entities/animals/steve/steve.xml", x, y )
 end

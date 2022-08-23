@@ -21,13 +21,22 @@ ModTextFileSetContent("data/entities/animals/shotgunner_weak.xml", "mods/hadal/f
 --biome script appends
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )
 ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/hadal/files/biome_append/coalmine_alt.lua" )
+
 ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/hadal/files/biome_append/excavationsite.lua" )
 ModLuaFileAppend( "data/scripts/biomes/fungicave.lua", "mods/hadal/files/biome_append/fungicave.lua" )
+
 ModLuaFileAppend( "data/scripts/biomes/snowcave.lua", "mods/hadal/files/biome_append/snowcave.lua" )
 ModLuaFileAppend( "data/scripts/biomes/snowcastle.lua", "mods/hadal/files/biome_append/snowcastle.lua" )
-ModLuaFileAppend( "data/scripts/biomes/winter_caves.lua", "mods/hadal/files/biome_append/winter_caves.lua" )
 ModLuaFileAppend( "data/scripts/biomes/winter.lua", "mods/hadal/files/biome_append/winter_caves.lua" )
 ModLuaFileAppend( "data/scripts/biomes/vault_frozen.lua", "mods/hadal/files/biome_append/vault_frozen.lua" )
+
+ModLuaFileAppend( "data/scripts/biomes/rainforest.lua", "mods/hadal/files/biome_append/jungle.lua" )
+ModLuaFileAppend( "data/scripts/biomes/rainforest_dark.lua", "mods/hadal/files/biome_append/jungle.lua" )
+ModLuaFileAppend( "data/scripts/biomes/vault.lua", "mods/hadal/files/biome_append/vault.lua" )
+
+ModLuaFileAppend( "data/scripts/biomes/crypt.lua", "mods/hadal/files/biome_append/crypt.lua" )
+
+ModLuaFileAppend( "data/scripts/biomes/wizardcave.lua", "mods/hadal/files/biome_append/wizard_den.lua" )
 
 --player
 function OnPlayerSpawned( player_entity )

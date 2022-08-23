@@ -1,4 +1,4 @@
-<Entity tags="hittable,teleportable_NOT,item_physics,item_pickup,wandcore,wandcore_t5">
+<Entity tags="hittable,teleportable_NOT,item_physics,item_pickup,wandcore,wandcore_t10">
 	<Base file="data/entities/base_item_projectile.xml" />
 
 	<PhysicsBodyComponent 
@@ -49,7 +49,7 @@
 
 	<ItemComponent
 		_tags="enabled_in_world"
-		item_name="Wand Core - V"
+		item_name="Wand Core - X"
 		ui_description="Can be used to create a wand."
 		ui_sprite="mods/hadal/files/entities/items/wandcores/sprites/wc.png"
 		max_child_items="0"
@@ -60,11 +60,11 @@
 
 	<UIInfoComponent
 		_tags="enabled_in_world"
-		name="Wand Core - V">
+		name="Wand Core - X">
 	</UIInfoComponent>
 	
 	<AbilityComponent
-		ui_name="Wand Core - V"
+		ui_name="Wand Core - X"
 		throw_as_item="1"
 		><gun_config
 			deck_capacity="0"
