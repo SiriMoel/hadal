@@ -13,6 +13,21 @@ KOLMI
 
 11 total
 
+ORBS
+
+00 floating island
+01 spider boss, underground pyramid place (normally pyramid)
+02 alchemist (originally idk)
+03 lava lake orb
+04 crashed ship
+05
+06
+07 squidward orb
+08
+09
+10
+11 grandmaster
+
 power plant somewhere
 OC somewhere BUT SIGNIFICANTLY CHANGED
 

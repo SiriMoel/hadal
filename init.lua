@@ -14,9 +14,10 @@ xml:add_children(nxml.parse_many[[
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
 
 --set
-ModTextFileSetContent("data/entities/projectiles/deck/black_hole.xml", "mods/hadal/files/set/black_hole.xml")
-ModTextFileSetContent("data/scripts/projectiles/black_hole_gravity.lua", "mods/hadal/files/set/black_hole_gravity.lua")
-ModTextFileSetContent("data/entities/animals/shotgunner_weak.xml", "mods/hadal/files/set/shotgunner_weak.xml")
+ModTextFileSetContent( "data/entities/projectiles/deck/black_hole.xml", "mods/hadal/files/set/black_hole.xml" )
+ModTextFileSetContent( "data/scripts/projectiles/black_hole_gravity.lua", "mods/hadal/files/set/black_hole_gravity.lua" )
+ModTextFileSetContent( "data/entities/animals/shotgunner_weak.xml", "mods/hadal/files/set/shotgunner_weak.xml" )
+ModTextFileSetContent( "data/entities/animals/boss_alchemist/death.lua", "mods/hadal/files/set/boss_alchemist_death.lua" )
 
 --biome script appends
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )
@@ -33,6 +34,7 @@ ModLuaFileAppend( "data/scripts/biomes/vault_frozen.lua", "mods/hadal/files/biom
 ModLuaFileAppend( "data/scripts/biomes/rainforest.lua", "mods/hadal/files/biome_append/jungle.lua" )
 ModLuaFileAppend( "data/scripts/biomes/rainforest_dark.lua", "mods/hadal/files/biome_append/jungle.lua" )
 ModLuaFileAppend( "data/scripts/biomes/vault.lua", "mods/hadal/files/biome_append/vault.lua" )
+ModLuaFileAppend( "data/scripts/biomes/fungiforest.lua", "mods/hadal/files/biome_append/oc.lua" )
 
 ModLuaFileAppend( "data/scripts/biomes/crypt.lua", "mods/hadal/files/biome_append/crypt.lua" )
 
