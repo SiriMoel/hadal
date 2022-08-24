@@ -10,6 +10,7 @@ local xml = nxml.parse(content)
 xml:add_children(nxml.parse_many[[
 	<Biome height_index="0" color="ffaa0c10" biome_filename="mods/hadal/files/biome/temple/wall.xml" />
     <Biome height_index="0" color="ffce1016" biome_filename="mods/hadal/files/biome/temple/temple.xml" />
+	<Biome height_index="0" color="ff826d82" biome_filename="mods/hadal/files/biome/pyramid/boss_arena.xml" />
 ]])
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
 
@@ -18,6 +19,8 @@ ModTextFileSetContent( "data/entities/projectiles/deck/black_hole.xml", "mods/ha
 ModTextFileSetContent( "data/scripts/projectiles/black_hole_gravity.lua", "mods/hadal/files/set/black_hole_gravity.lua" )
 ModTextFileSetContent( "data/entities/animals/shotgunner_weak.xml", "mods/hadal/files/set/shotgunner_weak.xml" )
 ModTextFileSetContent( "data/entities/animals/boss_alchemist/death.lua", "mods/hadal/files/set/boss_alchemist_death.lua" )
+ModTextFileSetContent( "data/entities/animals/boss_limbs/boss_limbs_death.lua", "mods/hadal/files/set/boss_limbs_death.lua" )
+ModTextFileSetContent( "data/biome/_pixel_scenes.xml", "mods/hadal/files/set/pixel_scenes.xml")
 
 --biome script appends
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )
@@ -39,6 +42,12 @@ ModLuaFileAppend( "data/scripts/biomes/fungiforest.lua", "mods/hadal/files/biome
 ModLuaFileAppend( "data/scripts/biomes/crypt.lua", "mods/hadal/files/biome_append/crypt.lua" )
 
 ModLuaFileAppend( "data/scripts/biomes/wizardcave.lua", "mods/hadal/files/biome_append/wizard_den.lua" )
+
+ModLuaFileAppend( "data/scripts/biomes/pyramid_entrance.lua", "mods/hadal/files/biome_append/pyramid.lua" )
+ModLuaFileAppend( "data/scripts/biomes/pyramid_hallway.lua", "mods/hadal/files/biome_append/pyramid.lua" )
+ModLuaFileAppend( "data/scripts/biomes/pyramid_left.lua", "mods/hadal/files/biome_append/pyramid.lua" )
+ModLuaFileAppend( "data/scripts/biomes/pyramid_right.lua", "mods/hadal/files/biome_append/pyramid.lua" )
+ModLuaFileAppend( "data/scripts/biomes/pyramid_top.lua", "mods/hadal/files/biome_append/pyramid.lua" ) 
 
 --player
 function OnPlayerSpawned( player_entity )

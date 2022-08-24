@@ -15,21 +15,18 @@ KOLMI
 
 ORBS
 
-00 floating island
-01 spider boss, underground pyramid place (normally pyramid)
-02 alchemist (originally idk)
-03 lava lake orb
-04 crashed ship
-05
-06
-07 squidward orb
-08
-09
-10
-11 grandmaster
+00 floating island DONE
+01 spider boss, underground pyramid place (normally pyramid) DONE
+02 alchemist (originally idk) DONE
+03 lava lake orb DONE
+04 mecha kolmi [crashed ship]
+05 ghost boss
+06 dragon DONE
+07 squidward orb DONE
+08 triangle [drops from gate monster a, need to change death script more than usual]
+09 kolmi
+10 grandmaster
+11 lusca
 
-power plant somewhere
-OC somewhere BUT SIGNIFICANTLY CHANGED
-
-MAKE WAND CORE LOOK LIKE BLUE ROCK (like the one in the wands)
-SPRITES FOR WAND PARTS, WAND CORE SPRITE CHANGE BASED OFF WHAT PART IS ON IT
+power plant somewhere (no, crashed ship on left wall)
+OC somewhere BUT SIGNIFICANTLY CHANGED (needs more changing)

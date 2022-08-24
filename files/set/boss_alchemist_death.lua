@@ -28,7 +28,7 @@ function death( damage_type_bit_field, damage_message, entity_thats_responsible,
 	
 	EntityLoad( "data/entities/animals/boss_alchemist/key.xml",  x, y )
 
-	EntityLoad( "data/entities/items/orbs/orb_02.xml")
+	EntityLoad( "data/entities/items/orbs/orb_02.xml", x, y )
 	
 	AddFlagPersistent( "card_unlocked_duplicate" )
 	AddFlagPersistent( "miniboss_alchemist" )
