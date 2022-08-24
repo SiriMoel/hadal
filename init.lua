@@ -21,9 +21,10 @@ ModTextFileSetContent( "data/scripts/projectiles/black_hole_gravity.lua", "mods/
 ModTextFileSetContent( "data/entities/animals/shotgunner_weak.xml", "mods/hadal/files/set/shotgunner_weak.xml" )
 ModTextFileSetContent( "data/entities/animals/boss_alchemist/death.lua", "mods/hadal/files/set/boss_alchemist_death.lua" )
 ModTextFileSetContent( "data/entities/animals/boss_limbs/boss_limbs_death.lua", "mods/hadal/files/set/boss_limbs_death.lua" )
-ModTextFileSetContent( "data/biome/_pixel_scenes.xml", "mods/hadal/files/set/pixel_scenes.xml")
+ModTextFileSetContent( "data/biome/_pixel_scenes.xml", "mods/hadal/files/set/_pixel_scenes.xml")
 ModTextFileSetContent( "data/entities/animals/boss_centipede/boss_centipede.xml", "mods/hadal/files/set/boss_centipede.xml" )
 ModTextFileSetContent( "data/entities/animals/boss_wizard/death.lua", "mods/hadal/files/set/boss_wizard_death.lua" )
+ModTextFileSetContent( "data/scripts/items/orb_pickup.lua", "mods/hadal/files/set/orb_pickup.lua" )
 
 --biome script appends
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )

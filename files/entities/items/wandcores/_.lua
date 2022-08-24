@@ -1,5 +1,6 @@
 dofile_once("data/scripts/lib/utilities.lua")
 dofile_once("data/scripts/gun/procedural/gun_procedural.lua")
+dofile_once("mods/hadal/files/lusca_curse.lua")
 
 local core_id = GetUpdatedEntityID()
 local x, y = EntityGetTransform( core_id )
@@ -13,6 +14,7 @@ if coretier == nil then
     print("coretier fel of")
     return
 end
+
 if handle ~= nil and brace ~= nil then
     local wand = EntityLoad("mods/hadal/files/entities/items/wandcores/_wand.xml", x, y)
     if EntityHasTag( wand, "hadalbuilt" ) == true then return end
@@ -25,4 +27,5 @@ if handle ~= nil and brace ~= nil then
     EntityKill(brace)
     EntityKill(core_id)
     GamePrint("Wand created!")
+    lusca_curse( "wand crafting" )
 end

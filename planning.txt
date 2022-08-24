@@ -1,19 +1,4 @@
--- STAGES
-
-# | BIOMES | ORB REQ TO PROGRESS (total) | SIDE BIOMES
-1 - mines & collapsed mines - 0 - none
-2 - coal mines & fungal caverns - 2 - sandcave (and possibly altered pyramid?)
-3 - snowy depths & hiisi base - 3 - abandoned laboratory
-4 - snowcave + more - 4 - idk
-5 - jungle + lukki lair + vault - 6 -
-6 - tota - 7 - 
-7 - wizards den - 8 -
-
-KOLMI 
-
-11 total
-
-ORBS
+ORBS (8 total required to enter final stage)
 
 00 floating island DONE
 01 spider boss, underground pyramid place (normally pyramid) DONE
@@ -31,4 +16,22 @@ ORBS
 power plant somewhere (no, crashed ship on left wall)
 OC somewhere BUT SIGNIFICANTLY CHANGED (needs more changing)
 
+LUSCA
+funny shark boss, dashes around and has tentacles
+
+should lusca be a worm-shark-thing or not?
+
+tentacle purpose? possibly just verlet tentacles? possible attacks?
+leaves a trail of projectiles (dont home at all, just sit there as "landmines")
+
+NEW CHESTS
+
+
+CRASHED SUBS (scattered around the map)
 small ships around the map can be loaded with _pixel_scenes.xml
+
+LUSCA'S CURSE
+chance to gain a curse level by doing specific things
+depending on curse level you gain debuffs
+curse is lifted by killing lusca
+perk to reduce curse chance
