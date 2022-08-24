@@ -24,9 +24,11 @@ ORBS
 06 dragon DONE
 07 squidward orb DONE
 08 triangle [drops from gate monster a, need to change death script more than usual]
-09 kolmi
-10 grandmaster
+09 semi random location DONE
+10 grandmaster DONE
 11 lusca
 
 power plant somewhere (no, crashed ship on left wall)
 OC somewhere BUT SIGNIFICANTLY CHANGED (needs more changing)
+
+small ships around the map can be loaded with _pixel_scenes.xml

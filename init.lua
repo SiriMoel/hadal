@@ -11,6 +11,7 @@ xml:add_children(nxml.parse_many[[
 	<Biome height_index="0" color="ffaa0c10" biome_filename="mods/hadal/files/biome/temple/wall.xml" />
     <Biome height_index="0" color="ffce1016" biome_filename="mods/hadal/files/biome/temple/temple.xml" />
 	<Biome height_index="0" color="ff826d82" biome_filename="mods/hadal/files/biome/pyramid/boss_arena.xml" />
+	<Biome height_index="10" color="ff8e3d3e" biome_filename="data/biome/tower/solid_wall_tower.xml" />
 ]])
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
 
@@ -21,6 +22,8 @@ ModTextFileSetContent( "data/entities/animals/shotgunner_weak.xml", "mods/hadal/
 ModTextFileSetContent( "data/entities/animals/boss_alchemist/death.lua", "mods/hadal/files/set/boss_alchemist_death.lua" )
 ModTextFileSetContent( "data/entities/animals/boss_limbs/boss_limbs_death.lua", "mods/hadal/files/set/boss_limbs_death.lua" )
 ModTextFileSetContent( "data/biome/_pixel_scenes.xml", "mods/hadal/files/set/pixel_scenes.xml")
+ModTextFileSetContent( "data/entities/animals/boss_centipede/boss_centipede.xml", "mods/hadal/files/set/boss_centipede.xml" )
+ModTextFileSetContent( "data/entities/animals/boss_wizard/death.lua", "mods/hadal/files/set/boss_wizard_death.lua" )
 
 --biome script appends
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )
