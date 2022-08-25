@@ -13,6 +13,7 @@ function lusca_curse( activity, entity )
         entity = EntityGetWithTag("player_unit")[1]
     end
     local chance = get_chance( activity )
+     -- perk to halve curse chance & perk to double curse chance code here
     if chance == nil then return end
     if math.random(1, chance) == 1 then
         cursed = true
@@ -44,10 +45,10 @@ end
 activities = {
     {
         activity = "wand crafting",
-        chance = 100,
+        chance = 50,
     },
     {
         activity = "orb collecting",
-        chance = 30,
+        chance = 10,
     },
 }
