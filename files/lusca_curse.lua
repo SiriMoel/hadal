@@ -36,7 +36,7 @@ function get_chance( activity ) -- ty gustavo
     for i, v in ipairs(activities) do 
         local x;
         if v["activity"] == activity then x = v else x = 0 end
-        if (x ~= 0) then return x["activity"]
+        if (x ~= 0) then return x["chance"]
     end
 end
 end
