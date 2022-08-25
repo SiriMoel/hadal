@@ -29,6 +29,7 @@ NEW CHESTS
 
 CRASHED SUBS (scattered around the map)
 small ships around the map can be loaded with _pixel_scenes.xml
+change wang tiles to have pixel, spawn sub and spawn thing inside sub from that?
 
 LUSCA'S CURSE
 chance to gain a curse level by doing specific things

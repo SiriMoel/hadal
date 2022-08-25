@@ -13,6 +13,7 @@ function lusca_curse( activity, entity )
         entity = EntityGetWithTag("player_unit")[1]
     end
     local chance = get_chance( activity )
+     -- perk to halve curse chance & perk to double curse chance code here
     if chance == nil then return end
     if math.random(1, chance) == 1 then
         cursed = true
@@ -41,7 +42,7 @@ function get_chance( activity ) -- ty gustavo
     for i, v in ipairs(shuffled) do 
         local x;
         if table.contains(v["activity"], activity) then x = v else x = 0 end
-        if (x ~= 0) then return x 
+        if (x ~= 0) then return x -- this fel of, doesnt work needs to return chance
     end
 end
 end
@@ -49,10 +50,10 @@ end
 activities = {
     {
         activity = "wand crafting",
-        chance = 100,
+        chance = 50,
     },
     {
         activity = "orb collecting",
-        chance = 30,
+        chance = 10,
     },
 }
