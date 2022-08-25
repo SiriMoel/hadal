@@ -34,15 +34,10 @@ function announce_cursed( activity, level, entity )
 end
 
 function get_chance( activity ) -- ty gustavo
-    local shuffled = {}
-    for i, v in ipairs(activities) do
-    local pos = math.random(1, #shuffled+1)
-    table.insert(shuffled, pos, v)
-    end
-    for i, v in ipairs(shuffled) do 
+    for i, v in ipairs(activities) do 
         local x;
-        if table.contains(v["activity"], activity) then x = v else x = 0 end
-        if (x ~= 0) then return x -- this fel of, doesnt work needs to return chance
+        if v["activity"] == activity then x = v else x = 0 end
+        if (x ~= 0) then return x["activity"]
     end
 end
 end
