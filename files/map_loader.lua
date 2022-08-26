@@ -7,6 +7,10 @@ BiomeMapLoadImage( 0, 0, "mods/hadal/files/m.png" )
 local nine_x = math.random(28, 41)
 local nine_y = math.random(15, 55)
 
+function orbroomnine()
+    BiomeMapSetPixel( nine_x, nine_y, 0xffffd109 )
+end
+
 if BiomeMapGetPixel(nine_x, nine_y) ~= 0xffce1016 then
     orbroomnine()
 else
@@ -15,8 +19,4 @@ else
       nine_y = math.random(15, 55) 
     end
     orbroomnine()
-end
-
-function orbroomnine()
-    BiomeMapSetPixel( nine_x, nine_y, 0xffffd109 )
 end
