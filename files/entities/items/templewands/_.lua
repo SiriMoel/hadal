@@ -11,4 +11,6 @@ hwands = {
     "data/entities/items/pickup/physics_die.xml",
     "data/entities/items/pickup/physics_gold_orb.xml",
     "data/entities/items/pickup/safe_haven.xml",
+    "mods/hadal/entities/items/wandcores/_brace.xml",
+    "mods/hadal/entities/items/wandcores/_handle.xml",
 }

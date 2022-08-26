@@ -14,7 +14,7 @@ possibly make orbs heal to full health?
 08 triangle [drops from gate monster a, need to change death script more than usual]
 09 semi random location DONE
 10 grandmaster DONE
-11 lusca DONE
+11 lusca DONE (lusca nyi)
 
 power plant somewhere (no, crashed ship on left wall)
 OC somewhere BUT SIGNIFICANTLY CHANGED (needs more changing)
@@ -39,3 +39,7 @@ chance to gain a curse level by doing specific things
 depending on curse level you gain debuffs
 curse is lifted by killing lusca
 perk to reduce curse chance
+
+OTHER
+map room pixel scene (loaded through _pixel_scenes.xml) to guide the player
+"tutorial" on "tablet" in spawn crashed sub
