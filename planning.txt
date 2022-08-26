@@ -4,14 +4,14 @@ ORBS (8 total required to enter final stage)
 possibly make orbs heal to full health?
 
 00 floating island DONE
-01 spider boss, underground pyramid place (normally pyramid) DONE
-02 alchemist (originally idk) DONE
+01 spider boss DONE
+02 alchemist DONE
 03 lava lake orb DONE
-04 mecha kolmi [crashed ship]
+04 mecha kolmi [crashed ship] DONE (crashed ship nyi)
 05 ghost boss DONE
 06 dragon DONE
 07 squidward orb DONE
-08 triangle [drops from gate monster a, need to change death script more than usual]
+08 triangle DONE
 09 semi random location DONE
 10 grandmaster DONE
 11 lusca DONE (lusca nyi)
