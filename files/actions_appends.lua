@@ -1,5 +1,4 @@
-remove_action("BLACK_HOLE_GIGA")
-remove_action("CHAINSAW")
+
 
 local to_insert = {
 	{
@@ -30,7 +29,7 @@ for k, v in ipairs(to_insert) do
     table.insert(actions, v)
 end
 
-function remove_action( action_name )
+--[[function remove_action( action_name )
 	local key_to_action = nil
 	for key,action in pairs(actions) do
 		if( action.id == action_name) then
@@ -42,3 +41,6 @@ function remove_action( action_name )
 		table.remove(actions, key_to_action)
 	end
 end
+
+remove_action("BLACK_HOLE_GIGA")
+remove_action("CHAINSAW")]]--
