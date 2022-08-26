@@ -9,6 +9,7 @@ function do_money_drop( amount_multiplier, trick_kill )
 	local entity = GetUpdatedEntityID()
 
     local curselevel = tonumber(GlobalsGetValue("luscacurse"))
+	if (curselevel) == nil then curselevel = 0 end
     amount_multiplier = amount_multiplier + ( curselevel * 0.3 )
 
 
