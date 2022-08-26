@@ -3,7 +3,7 @@ ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/hadal/files/actions_
 ModMagicNumbersFileAdd( "mods/hadal/files/magic_numbers.xml" ) 
 ModMaterialsFileAdd("mods/hadal/files/materials.xml")
 
-local nxml = dofile_once("mods/mould_n/lib/nxml.lua")
+local nxml = dofile_once("mods/hadal/lib/nxml.lua")
 
 local content = ModTextFileGetContent("data/biome/_biomes_all.xml")
 local xml = nxml.parse(content)
@@ -82,17 +82,17 @@ function OnPlayerSpawned( player_entity )
 			local radioactive = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "radioactive" ) )
 			local poison = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "poison" ) )
 
-			melee = melee * 1
-			projectile = projectile * 1
-			explosion = explosion * 1
+			melee = melee * 1.1
+			projectile = projectile * 1.1
+			explosion = explosion * 1.1
 			electricity = electricity * 1.3
-			fire = fire * 1
-			drill = drill * 1
-			slice = slice * 1.3
-			ice = ice * 1
+			fire = fire * 1.3
+			drill = drill * 1.1
+			slice = slice * 1.1
+			ice = ice * 1.1
             healing = healing * 0.75
             physics_hit = physics_hit * 2
-			radioactive = radioactive * 1
+			radioactive = radioactive * 1.3
 			poison = poison * 2
 
 			ComponentObjectSetValue( damagemodel, "damage_multipliers", "melee", tostring(melee) )

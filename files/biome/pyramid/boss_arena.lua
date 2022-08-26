@@ -5,7 +5,6 @@ dofile_once("data/scripts/biome_scripts.lua")
 
 RegisterSpawnFunction( 0xffffeedd, "init" )
 RegisterSpawnFunction( 0xff808000, "spawn_statues" )
-RegisterSpawnFunction( 0xff00AC64, "load_pixel_scene4" )
 RegisterSpawnFunction( 0xffC8C800, "spawn_lamp2" )
 RegisterSpawnFunction( 0xff400080, "spawn_large_enemies" )
 RegisterSpawnFunction( 0xffC8001A, "spawn_ghost_crystal" )
@@ -13,12 +12,10 @@ RegisterSpawnFunction( 0xff82FF5A, "spawn_crawlers" )
 RegisterSpawnFunction( 0xff647D7D, "spawn_pressureplates" )
 RegisterSpawnFunction( 0xff649B7D, "spawn_doors" )
 RegisterSpawnFunction( 0xffA07864, "spawn_scavengers" )
-RegisterSpawnFunction( 0xff00AC33, "load_pixel_scene3" )
-RegisterSpawnFunction( 0xffFFCD2A, "spawn_scorpions" )
 RegisterSpawnFunction( 0xffa37c62, "spawn_boss_limbs" )
 
 function init( x, y, w, h )
-	LoadPixelScene( "mods/hadak/files/biome/pyramid/arena.png", "", x, y, "", true )
+	LoadPixelScene( "mods/hadal/files/biome/pyramid/arena.png", "", x, y, "", true )
 	LoadBackgroundSprite("data/weather_gfx/background_pyramid.png", x, y)
 	LoadBackgroundSprite("data/weather_gfx/background_pyramid.png", x, y + 256)
 end
@@ -518,14 +515,6 @@ function spawn_doors(x, y)
 	spawn(g_doors,x,y,0,0)
 end
 
-function load_pixel_scene( x, y )
-	load_random_pixel_scene( g_pixel_scene_01, x, y )
-end
-
-function load_pixel_scene3( x, y )
-	load_random_pixel_scene( g_pixel_scene_03, x, y )
-end
-
 function spawn_scavengers(x, y)
 	spawn(g_scavengers,x,y,0,0)
 end
@@ -535,9 +524,12 @@ function spawn_scorpions(x, y)
 end
 
 function spawn_boss_limbs( x, y )
-	local maptilex = math.floor(x / 512)
+
+	EntityLoad( "data/entities/animals/boss_limbs/boss_limbs.xml", x, y )
+
+	--[[local maptilex = math.floor(x / 512)
 	
 	if (maptilex == 1) then
-		EntityLoad( "data/entities/animals/boss_limbs/boss_limbs.xml", x, y )
-	end
+		
+	end]]--
 end

@@ -1,4 +1,7 @@
+PYRAMID BOSS SPAWN IS BUGGED
+
 ORBS (8 total required to enter final stage)
+possibly make orbs heal to full health?
 
 00 floating island DONE
 01 spider boss, underground pyramid place (normally pyramid) DONE

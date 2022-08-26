@@ -86,17 +86,17 @@
 		<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="data/biome_impl/pyramid/reward_visual.png" material_filename="data/biome_impl/pyramid/boss_limbs.png" pos_x="9726" pos_y="-1024" skip_biome_checks="1" skip_edge_textures="0" >
 		</PixelScene>
 		
-		<PixelScene DEBUG_RELOAD_ME="0" background_filename="data/biome_impl/temple/altar_snowcastle_capsule_background.png" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/temple/altar_snowcastle_capsule.png" pos_x="143" pos_y="5112" skip_biome_checks="1" skip_edge_textures="0" >
-		</PixelScene>
+		<!--<PixelScene DEBUG_RELOAD_ME="0" background_filename="data/biome_impl/temple/altar_snowcastle_capsule_background.png" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/temple/altar_snowcastle_capsule.png" pos_x="143" pos_y="5112" skip_biome_checks="1" skip_edge_textures="0" >
+		</PixelScene-->
 
 		<PixelScene DEBUG_RELOAD_ME="0" background_filename="data/biome_impl/snowcastle/forge_background.png" clean_area_before="0" colors_filename="data/biome_impl/snowcastle/forge_visual.png" material_filename="data/biome_impl/snowcastle/forge.png" pos_x="1464" pos_y="5976" skip_biome_checks="1" skip_edge_textures="0" >
 		</PixelScene>
 		
-		<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/temple/altar_vault_capsule.png" pos_x="143" pos_y="8704" skip_biome_checks="1" skip_edge_textures="0" >
-		</PixelScene>
+		<!--<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/temple/altar_vault_capsule.png" pos_x="143" pos_y="8704" skip_biome_checks="1" skip_edge_textures="0" >
+		</PixelScene-->
 		
-		<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/temple/altar_snowcave_capsule.png" pos_x="127" pos_y="3072" skip_biome_checks="1" skip_edge_textures="0" >
-		</PixelScene>
+		<!--<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/temple/altar_snowcave_capsule.png" pos_x="127" pos_y="3072" skip_biome_checks="1" skip_edge_textures="0" >
+		</PixelScene-->
 		
 		<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/tower_start.png" pos_x="9676" pos_y="9086" skip_biome_checks="1" skip_edge_textures="0" >
 		</PixelScene>
