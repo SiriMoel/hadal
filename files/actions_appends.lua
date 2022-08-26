@@ -1,6 +1,3 @@
-remove_action("BLACK_HOLE_GIGA")
-remove_action("CHAINSAW")
-
 local to_insert = {
 	{
 		id          = "HADAL_CHAINSAW",
@@ -42,3 +39,6 @@ function remove_action( action_name )
 		table.remove(actions, key_to_action)
 	end
 end
+
+remove_action("BLACK_HOLE_GIGA")
+remove_action("CHAINSAW")
