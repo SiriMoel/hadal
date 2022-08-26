@@ -70,7 +70,7 @@ function item_pickup( entity_item, entity_who_picked, item_name )
 	
 	GamePrintImportant( message_title, message_desc )
 	
-    lusca_curse( "orb collecting", entity_who_picked )
+    lusca_curse( "orb_collecting" )
 
 	shoot_projectile( entity_who_picked, "data/entities/particles/image_emitters/orb_effect.xml", pos_x, pos_y, 0, 0 )
 	EntityKill( entity_item )

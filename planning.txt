@@ -5,13 +5,13 @@ ORBS (8 total required to enter final stage)
 02 alchemist (originally idk) DONE
 03 lava lake orb DONE
 04 mecha kolmi [crashed ship]
-05 ghost boss
+05 ghost boss DONE
 06 dragon DONE
 07 squidward orb DONE
 08 triangle [drops from gate monster a, need to change death script more than usual]
 09 semi random location DONE
 10 grandmaster DONE
-11 lusca
+11 lusca DONE
 
 power plant somewhere (no, crashed ship on left wall)
 OC somewhere BUT SIGNIFICANTLY CHANGED (needs more changing)

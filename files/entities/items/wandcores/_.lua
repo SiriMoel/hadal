@@ -27,5 +27,5 @@ if handle ~= nil and brace ~= nil then
     EntityKill(brace)
     EntityKill(core_id)
     GamePrint("Wand created!")
-    lusca_curse( "wand crafting" )
+    lusca_curse( "wand_crafting" )
 end
