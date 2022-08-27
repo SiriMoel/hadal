@@ -31,29 +31,26 @@ ModTextFileSetContent( "data/scripts/items/drop_money.lua", ModTextFileGetConten
 --biome script appends
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )
 ModLuaFileAppend( "data/scripts/biomes/coalmine_alt.lua", "mods/hadal/files/biome_append/coalmine_alt.lua" )
-
 ModLuaFileAppend( "data/scripts/biomes/excavationsite.lua", "mods/hadal/files/biome_append/excavationsite.lua" )
 ModLuaFileAppend( "data/scripts/biomes/fungicave.lua", "mods/hadal/files/biome_append/fungicave.lua" )
-
 ModLuaFileAppend( "data/scripts/biomes/snowcave.lua", "mods/hadal/files/biome_append/snowcave.lua" )
 ModLuaFileAppend( "data/scripts/biomes/snowcastle.lua", "mods/hadal/files/biome_append/snowcastle.lua" )
 ModLuaFileAppend( "data/scripts/biomes/winter.lua", "mods/hadal/files/biome_append/winter_caves.lua" )
 ModLuaFileAppend( "data/scripts/biomes/vault_frozen.lua", "mods/hadal/files/biome_append/vault_frozen.lua" )
-
 ModLuaFileAppend( "data/scripts/biomes/rainforest.lua", "mods/hadal/files/biome_append/jungle.lua" )
 ModLuaFileAppend( "data/scripts/biomes/rainforest_dark.lua", "mods/hadal/files/biome_append/jungle.lua" )
 ModLuaFileAppend( "data/scripts/biomes/vault.lua", "mods/hadal/files/biome_append/vault.lua" )
 ModLuaFileAppend( "data/scripts/biomes/fungiforest.lua", "mods/hadal/files/biome_append/oc.lua" )
-
 ModLuaFileAppend( "data/scripts/biomes/crypt.lua", "mods/hadal/files/biome_append/crypt.lua" )
-
 ModLuaFileAppend( "data/scripts/biomes/wizardcave.lua", "mods/hadal/files/biome_append/wizard_den.lua" )
-
 ModLuaFileAppend( "data/scripts/biomes/pyramid_entrance.lua", "mods/hadal/files/biome_append/pyramid.lua" )
 ModLuaFileAppend( "data/scripts/biomes/pyramid_hallway.lua", "mods/hadal/files/biome_append/pyramid.lua" )
 ModLuaFileAppend( "data/scripts/biomes/pyramid_left.lua", "mods/hadal/files/biome_append/pyramid.lua" )
 ModLuaFileAppend( "data/scripts/biomes/pyramid_right.lua", "mods/hadal/files/biome_append/pyramid.lua" )
 ModLuaFileAppend( "data/scripts/biomes/pyramid_top.lua", "mods/hadal/files/biome_append/pyramid.lua" ) 
+ModLuaFileAppend( "data/scripts/biomes/the_end.lua", "mods/hadal/files/biome_append/sky.lua" ) 
+ModLuaFileAppend( "data/scripts/biomes/clouds.lua", "mods/hadal/files/biome_append/clouds.lua" ) 
+ModLuaFileAppend( "data/scripts/biomes/sandcave.lua", "mods/hadal/files/biome_append/sandcave.lua" ) 
 
 --player
 function OnPlayerSpawned( player_entity )
@@ -68,7 +65,6 @@ function OnPlayerSpawned( player_entity )
 	local damagemodels = EntityGetComponent( player_entity, "DamageModelComponent" )
 	if( damagemodels ~= nil ) then
 		for i,damagemodel in ipairs(damagemodels) do
-			
 			local melee = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "melee" ) )
 			local projectile = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "projectile" ) )
 			local explosion = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "explosion" ) )
@@ -107,8 +103,6 @@ function OnPlayerSpawned( player_entity )
 			ComponentObjectSetValue( damagemodel, "damage_multipliers", "physics_hit", tostring(physics_hit) )
 			ComponentObjectSetValue( damagemodel, "damage_multipliers", "radioactive", tostring(radioactive) )
 			ComponentObjectSetValue( damagemodel, "damage_multipliers", "poison", tostring(poison) )
-
 		end
 	end
-
 end

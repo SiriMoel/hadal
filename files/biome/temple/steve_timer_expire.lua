@@ -8,10 +8,14 @@ local radius = 200
 local player = EntityGetInRadiusWithTag( x, y, radius, "player_unit" )[1]
 local workshops = EntityGetInRadiusWithTag( x, y, radius, "workshop" )
 
+if ModSettingGet( "hadal_difficulty.steve_timer" ) == false then return end
+
 if player ~= nil then
     GamePrintImportant( "You are too slow!", "This is so sad." )
     EntityLoad( "mods/hadal/files/entities/animals/steve/steve.xml", x, y )
     for i,v in ipairs(workshops) do
         EntityKill(v)
     end
+else
+    GamePrint("You got out in time!")
 end

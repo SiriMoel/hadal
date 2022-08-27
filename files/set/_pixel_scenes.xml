@@ -16,9 +16,9 @@
 	
     <File>data/biome_impl/spliced/lake_statue.xml</File>-->
 
-    <File>data/biome_impl/spliced/moon.xml</File>
+    <!--<File>data/biome_impl/spliced/moon.xml</File>
 	
-    <File>data/biome_impl/spliced/moon_dark.xml</File>
+    <File>data/biome_impl/spliced/moon_dark.xml</File>-->
 	
 	<File>data/biome_impl/spliced/lavalake_pit_bottom.xml</File>
 	
@@ -83,14 +83,14 @@
 		</PixelScene>
 		-->
 		
-		<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="data/biome_impl/pyramid/reward_visual.png" material_filename="data/biome_impl/pyramid/boss_limbs.png" pos_x="9726" pos_y="-1024" skip_biome_checks="1" skip_edge_textures="0" >
-		</PixelScene>
+		<!--<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="data/biome_impl/pyramid/reward_visual.png" material_filename="data/biome_impl/pyramid/boss_limbs.png" pos_x="9726" pos_y="-1024" skip_biome_checks="1" skip_edge_textures="0" >
+		</PixelScene>-->
 		
 		<!--<PixelScene DEBUG_RELOAD_ME="0" background_filename="data/biome_impl/temple/altar_snowcastle_capsule_background.png" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/temple/altar_snowcastle_capsule.png" pos_x="143" pos_y="5112" skip_biome_checks="1" skip_edge_textures="0" >
 		</PixelScene-->
 
-		<PixelScene DEBUG_RELOAD_ME="0" background_filename="data/biome_impl/snowcastle/forge_background.png" clean_area_before="0" colors_filename="data/biome_impl/snowcastle/forge_visual.png" material_filename="data/biome_impl/snowcastle/forge.png" pos_x="1464" pos_y="5976" skip_biome_checks="1" skip_edge_textures="0" >
-		</PixelScene>
+		<!--<PixelScene DEBUG_RELOAD_ME="0" background_filename="data/biome_impl/snowcastle/forge_background.png" clean_area_before="0" colors_filename="data/biome_impl/snowcastle/forge_visual.png" material_filename="data/biome_impl/snowcastle/forge.png" pos_x="1464" pos_y="5976" skip_biome_checks="1" skip_edge_textures="0" >
+		</PixelScene>-->
 		
 		<!--<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/temple/altar_vault_capsule.png" pos_x="143" pos_y="8704" skip_biome_checks="1" skip_edge_textures="0" >
 		</PixelScene-->
@@ -101,8 +101,8 @@
 		<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/tower_start.png" pos_x="9676" pos_y="9086" skip_biome_checks="1" skip_edge_textures="0" >
 		</PixelScene>
 		
-		<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/the_end/the_end_shop.png" pos_x="0" pos_y="24576" skip_biome_checks="1" skip_edge_textures="0" >
-		</PixelScene>
+		<!--<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/the_end/the_end_shop.png" pos_x="0" pos_y="24576" skip_biome_checks="1" skip_edge_textures="0" >
+		</PixelScene>-->
 		
 		<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/the_end/the_end_shop.png" pos_x="0" pos_y="-13954" skip_biome_checks="1" skip_edge_textures="0" >
 		</PixelScene>
@@ -240,9 +240,9 @@
 		<PixelScene pos_x="-1280" pos_y="9984" just_load_an_entity="data/entities/buildings/eyespot_d.xml" />
 		<PixelScene pos_x="13056" pos_y="9984" just_load_an_entity="data/entities/buildings/eyespot_e.xml" />
 		
-		<PixelScene pos_x="14941" pos_y="18654" just_load_an_entity="data/entities/buildings/maggotspot.xml" />
+		<!--<PixelScene pos_x="14941" pos_y="18654" just_load_an_entity="data/entities/buildings/maggotspot.xml" /-->
 		
-		<PixelScene pos_x="-14000" pos_y="10000" just_load_an_entity="data/entities/animals/boss_fish/fish_giga.xml" />
+		<!--<PixelScene pos_x="-14000" pos_y="10000" just_load_an_entity="data/entities/animals/boss_fish/fish_giga.xml" /-->
 
 	</mBufferedPixelScenes>
 </PixelScenes>
