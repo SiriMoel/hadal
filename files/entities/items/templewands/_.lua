@@ -1,7 +1,6 @@
 hwands = {
     "data/entities/items/pickup/beamstone.xml",
     "data/entities/items/pickup/gourd.xml",
-    "data/entities/items/pickup/jar_of_urine.xml",
     "data/entities/items/pickup/moon.xml",
     "data/entities/items/pickup/musicstone.xml",
     "data/entities/items/pickup/stonestone.xml",
@@ -13,4 +12,11 @@ hwands = {
     "data/entities/items/pickup/safe_haven.xml",
     "mods/hadal/entities/items/wandcores/_brace.xml",
     "mods/hadal/entities/items/wandcores/_handle.xml",
+    "data/entities/items/pickup/runestones/runestone_disc.xml",
+    "data/entities/items/pickup/runestones/runestone_fire.xml",
+    "data/entities/items/pickup/runestones/runestone_laser.xml",
+    "data/entities/items/pickup/runestones/runestone_lava.xml",
+    "data/entities/items/pickup/runestones/runestone_metal.xml",
+    "data/entities/items/pickup/runestones/runestone_null.xml",
+    "data/entities/items/pickup/runestones/runestone_slow.xml",
 }
