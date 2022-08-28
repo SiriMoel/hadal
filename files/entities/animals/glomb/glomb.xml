@@ -200,7 +200,7 @@
 		auto_play="1">
 	</AudioLoopComponent>
 
-    	<AreaDamageComponent
+    <AreaDamageComponent
 		aabb_min.x="-72" 
 		aabb_min.y="-72" 
 		aabb_max.x="72" 
