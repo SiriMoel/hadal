@@ -35,8 +35,8 @@ end
 
 function announce_cursed( activity, level, entity )
     local activitytext = string.gsub(activity, "_", " ")
-    GamePrintImportant( "Lusca has cursed you!", "Your " .. activitytext .. " has caught the attention of Lusca." )
-    GamePrint( "Lusca curse level now: " .. tostring(level) )
+    GamePrintImportant( "The Glomb has cursed you!", "Your " .. activitytext .. " has caught the attention of the Glomb." )
+    GamePrint( "Glomb curse level now: " .. tostring(level) )
     local x, y = EntityGetT1ransform( entity )
     local child_id = EntityLoad( "data/entities/misc/orb_boss_scream.xml", x, y )
     EntityAddChild( entity, child_id )
