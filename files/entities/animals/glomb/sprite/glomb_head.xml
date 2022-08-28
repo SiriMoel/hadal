@@ -1,7 +1,7 @@
 <Sprite 
   filename="mods/hadal/files/entities/animals/glomb/sprite/glomb_head.png" 
-  offset_x="144" 
-  offset_y="96" 
+  offset_x="36" 
+  offset_y="24" 
   default_animation="stand">
 
   <RectAnimation 
