@@ -1,0 +1,24 @@
+<Entity tags="hadalbook">
+	<Base file="mods/files/entities/items/blackboxes/_base.xml">
+		<BookComponent
+			_enabled="0"
+			>
+		</BookComponent>
+
+		<UIInfoComponent
+			name="Blackbox"
+			>
+		</UIInfoComponent>
+		
+		<ItemComponent
+			item_name="Blackbox"
+			ui_description=""
+			>
+		</ItemComponent>
+		
+		<AbilityComponent
+			ui_name="Blackbox"
+			>
+		</AbilityComponent>
+	</Base>
+</Entity>
