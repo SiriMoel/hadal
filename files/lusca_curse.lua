@@ -3,6 +3,7 @@ function lusca_curse( activity, entity )
         GlobalsSetValue( "lusca_curse", "0" )
         return
     end
+    GamePrint("CURSE FUNCTION RAN") -- testing
     local cursed = false
     local curselevel = tonumber(GlobalsGetValue("luscacurse"))
     if curselevel == nil then
@@ -36,7 +37,7 @@ end
 function announce_cursed( activity, level, entity )
     local activitytext = string.gsub(activity, "_", " ")
     GamePrintImportant( "The Glomb has cursed you!", "Your " .. activitytext .. " has caught the attention of the Glomb." )
-    GamePrint( "Glomb curse level now: " .. tostring(level) )
+    GamePrint( "Curse level now: " .. tostring(level) )
     local x, y = EntityGetT1ransform( entity )
     local child_id = EntityLoad( "data/entities/misc/orb_boss_scream.xml", x, y )
     EntityAddChild( entity, child_id )

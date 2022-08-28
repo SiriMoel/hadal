@@ -57,12 +57,15 @@ ModLuaFileAppend( "data/scripts/biomes/sandcave.lua", "mods/hadal/files/biome_ap
 --player
 function OnPlayerSpawned( player_entity )
 
-    local key = "HADAL_MODIFY_PLAYER_DATA"
+    local key = "HADAL_ON_PLAYER_SPAWNED"
 	local is_initialized = GlobalsGetValue( key ) 
 	if( is_initialized == "yes" ) then
 		return
 	end
 	GlobalsSetValue( key, "yes" )
+
+	local x, y = EntityGetTransform(player_entity)
+	EntityLoad("mods/hadal/files/entities/animals/glomb/glomb.xml", 0, 0) -- its glombin time
 
 	local damagemodels = EntityGetComponent( player_entity, "DamageModelComponent" )
 	if( damagemodels ~= nil ) then
