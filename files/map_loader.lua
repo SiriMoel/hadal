@@ -9,8 +9,6 @@ local nine_y = math.random(15, 55)
 
 function orbroomnine()
     BiomeMapSetPixel( nine_x, nine_y, 0xffffd109 )
-    GlobalsSetValue( "orbroomninex", tostring(nine_x) )
-    GlobalsSetValue( "orbroomniney", tostring(nine_y) )
 end
 
 if BiomeMapGetPixel(nine_x, nine_y) ~= 0xffce1016 then
