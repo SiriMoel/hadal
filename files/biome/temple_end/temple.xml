@@ -1,4 +1,5 @@
 <Biome>
+
   <Topology 
     name="$biome_holymountain"
 	  type="BIOME_WANG_TILE"
@@ -17,7 +18,8 @@
   </Topology>
 
   <Materials 
-    name="temple" 
+    name="temple"
      >
-   </Materials>
+  </Materials>
+
 </Biome>

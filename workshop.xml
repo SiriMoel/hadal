@@ -1,11 +1,20 @@
 <Mod
 name="Hadal Difficulty"
 description="
-FEATURES
-- wand crafting mechanic (no more finding wands)
-- orbs required to progress (cope)
-- new map (seethe)
-- pain (pain)
+A difficulty mod aiming to provide a uniquely painful experience.
+
+[h1] What is Change? [/h1]
+[list]
+[*] Wands must be crafted
+[*] New Map (around twice the depth of vanilla map)
+[*] Orb requirement to progress through Holy Mountains
+[*] Bosses drop orbs and are more accessible
+[*] The Glomb
+[/list]
+
+[h1] Questions [/h1]
+[b] How do I acquire wands? [/b]
+Wands can be acquired from vanilla crafting, 
 "
 tags="gameplay"
 dont_upload_folders=".assets" 

@@ -120,7 +120,7 @@
 	</ParticleEmitterComponent>
 
 	<LuaComponent
-		script_source_file="mods/hadal/files/biome/temple/portal.lua"
+		script_source_file="mods/hadal/files/biome/temple_end/portal.lua"
 		execute_every_n_frame="5"
 		>
 	</LuaComponent>
@@ -142,4 +142,5 @@
 		auto_play_if_enabled="1"
 		play_on_component_enable="1" >
 	</AudioLoopComponent>
+	
 </Entity>

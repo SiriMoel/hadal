@@ -142,4 +142,5 @@
 		auto_play_if_enabled="1"
 		play_on_component_enable="1" >
 	</AudioLoopComponent>
+	
 </Entity>

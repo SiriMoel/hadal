@@ -58,17 +58,17 @@ function spawn_vines(x, y)
 end
 
 function init( x, y, w, h )
-	LoadPixelScene( "mods/hadal/files/biome/temple_end/temple_top.png", "mods/hadal/files/biome/temple/temple_top_visual.png", x, y-40, "", true )
+	LoadPixelScene( "mods/hadal/files/biome/temple_end/temple_top.png", "mods/hadal/files/biome/temple_end/temple_top_visual.png", x, y-40, "", true )
 
 	LoadPixelScene( "mods/hadal/files/biome/temple_end/temple.png", "mods/hadal/files/biome/temple_end/temple_visual.png", x, y-40+300, "mods/hadal/files/biome/temple_end/temple_background.png", true )
 end
 
 function portal( x, y )
-    EntityLoad( "mods/hadal/files/biome/temple_top/portal.xml", x, y )
+    EntityLoad( "mods/hadal/files/biome/temple_end/portal.xml", x, y )
 end
 
 function portal_end( x, y )
-    EntityLoad( "mods/hadal/files/biome/temple_top/portal_end.xml", x, y )
+    EntityLoad( "mods/hadal/files/biome/temple_end/portal_end.xml", x, y )
 end
 
 function spawn_workshop( x, y )

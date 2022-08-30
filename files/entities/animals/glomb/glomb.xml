@@ -11,8 +11,8 @@
 	</_Transform>
 
     <BossDragonComponent
-        speed="12"
-		speed_hunt="15"
+        speed="6"
+		speed_hunt="9"
 		acceleration="0.55"
 		direction_adjust_speed="0.006"
 		direction_adjust_speed_hunt="0.01"
@@ -182,7 +182,7 @@
 	</SpriteComponent>
 
     <LightComponent 
-		_enabled="" 
+		_enabled="0" 
 		radius="200"
 		r="255"
 		g="180"
