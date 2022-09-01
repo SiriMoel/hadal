@@ -110,8 +110,8 @@
 		<PixelScene DEBUG_RELOAD_ME="0" background_filename="data/biome_impl/greed_treasure_background.png" clean_area_before="0" colors_filename="" material_filename="data/biome_impl/greed_treasure.png" pos_x="9216" pos_y="4096" skip_biome_checks="1" skip_edge_textures="0" >
 		</PixelScene>
 		
-		<PixelScene DEBUG_RELOAD_ME="0" background_filename="data/biome_impl/fishing_hut_background.png" clean_area_before="0" colors_filename="data/biome_impl/fishing_hut_visual.png" material_filename="data/biome_impl/fishing_hut.png" pos_x="-12600" pos_y="140" skip_biome_checks="1" skip_edge_textures="1" >
-		</PixelScene>
+		<!--<PixelScene DEBUG_RELOAD_ME="0" background_filename="data/biome_impl/fishing_hut_background.png" clean_area_before="0" colors_filename="data/biome_impl/fishing_hut_visual.png" material_filename="data/biome_impl/fishing_hut.png" pos_x="-12600" pos_y="140" skip_biome_checks="1" skip_edge_textures="1" >
+		</PixelScene>-->
 		
 		<!--<PixelScene DEBUG_RELOAD_ME="0" background_filename="" clean_area_before="0" colors_filename="data/biome_impl/overworld/essence_altar_visual.png" material_filename="data/biome_impl/overworld/essence_altar.png" pos_x="-6948" pos_y="-270" skip_biome_checks="1" skip_edge_textures="1" >
 		</PixelScene>
