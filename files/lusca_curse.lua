@@ -23,7 +23,7 @@ function lusca_curse( activity, entity )
     --mod setting for adjusting chance?
     if chance == nil then return end
     local cursenum = math.random(1, chance)
-    GamePrint("CURSE FUNCTION RAN, " .. cursenum) -- testing
+    --GamePrint("CURSE FUNCTION RAN, " .. cursenum) -- testing
     if cursenum == 1 then
         cursed = true
     end
@@ -111,15 +111,15 @@ cursedebuffs = {
 activities = {
     {
         activity = "wand_crafting",
-        chance = 30,
+        chance = 15,
     },
     {
         activity = "orb_collecting",
-        chance = 10,
+        chance = 7,
     },
     {
         activity = "creature_killing",
-        chance = 150,
+        chance = 100,
     },
 }
 
