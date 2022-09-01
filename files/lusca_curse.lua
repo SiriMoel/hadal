@@ -3,7 +3,6 @@ function lusca_curse( activity, entity )
         GlobalsSetValue( "lusca_curse", "0" )
         return
     end
-    GamePrint("CURSE FUNCTION RAN") -- testing
     local cursed = false
     local curselevel = tonumber(GlobalsGetValue("luscacurse"))
     if curselevel == nil then
@@ -23,7 +22,9 @@ function lusca_curse( activity, entity )
     end
     --mod setting for adjusting chance?
     if chance == nil then return end
-    if math.random(1, chance) == 1 then
+    local cursenum = math.random(1, chance)
+    GamePrint("CURSE FUNCTION RAN, " .. cursenum) -- testing
+    if cursenum == 1 then
         cursed = true
     end
     if cursed == true then -- you are cursed
