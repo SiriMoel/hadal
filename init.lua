@@ -65,7 +65,7 @@ function OnPlayerSpawned( player_entity )
 	GlobalsSetValue( key, "yes" )
 
 	local x, y = EntityGetTransform(player_entity)
-	EntityLoad("mods/hadal/files/entities/animals/glomb/glomb.xml", 0, 0) -- its glombin time
+	--EntityLoad("mods/hadal/files/entities/animals/glomb/glomb.xml", 0, 0) -- its glombin time
 
 	local damagemodels = EntityGetComponent( player_entity, "DamageModelComponent" )
 	if( damagemodels ~= nil ) then
