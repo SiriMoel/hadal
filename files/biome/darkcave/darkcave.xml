@@ -19,10 +19,10 @@
     coarse_map_force_terrain="1"
     audio_music_2="wandcave"
     audio_ambience="wandcave"
-    fog_of_war_type="HEAVY_NO_CLEAR"
+    
     >
   </Topology>
-
+  <!--fog_of_war_type="HEAVY_NO_CLEAR"-->
 
   <Materials 
     name="watercave" 

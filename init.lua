@@ -26,10 +26,12 @@ ModTextFileSetContent( "data/entities/animals/boss_alchemist/death.lua", ModText
 ModTextFileSetContent( "data/entities/animals/boss_limbs/boss_limbs_death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_limbs_death.lua") )
 ModTextFileSetContent( "data/biome/_pixel_scenes.xml", ModTextFileGetContent("mods/hadal/files/set/_pixel_scenes.xml") )
 ModTextFileSetContent( "data/entities/animals/boss_centipede/boss_centipede.xml", ModTextFileGetContent("mods/hadal/files/set/boss_centipede.xml") )
-ModTextFileSetContent( "data/entities/animals/boss_wizard/death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_wizard_death.lua") )
+ModTextFileSetContent( "data/entities/animals/boss_wizard/death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_wizard_death.lua" ) )
+ModTextFileSetContent( "data/entities/animals/boss_robot/death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_robot_death.lua") )
 ModTextFileSetContent( "data/entities/animals/boss_ghost/death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_ghost_death.lua") )
 ModTextFileSetContent( "data/scripts/items/orb_pickup.lua", ModTextFileGetContent("mods/hadal/files/set/orb_pickup.lua") )
 ModTextFileSetContent( "data/scripts/items/drop_money.lua", ModTextFileGetContent("mods/hadal/files/set/drop_money.lua") )
+ModTextFileSetContent( "data/entities/projectiles/deck/machinegun_bullet.xml", ModTextFileGetContent("mods/hadal/files/set/machinegun_bullet.xml") )
 
 --biome script appends
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )

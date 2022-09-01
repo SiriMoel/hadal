@@ -5,6 +5,8 @@ dofile_once("data/scripts/biome_scripts.lua")
 
 RegisterSpawnFunction( 0xffffeedd, "init" )
 RegisterSpawnFunction( 0xffffb539, "random_layout" )
+RegisterSpawnFunction( 0xff00ff00, "spawn_items" )
+RegisterSpawnFunction( 0xffc88d1a, "spawn_props" )
 
 g_small_enemies =
 {
@@ -62,7 +64,12 @@ function spawn_potions( x, y ) end
 function init( x, y, w, h ) end
 
 function random_layout( x, y )
-	local r = math.floor(ProceduralRandom(x, y, 1, 6))
+	local r = math.floor(ProceduralRandom(x, y, 1, 5))
+	LoadPixelScene( "data/biome_impl/watercave_layout_"..r..".png", "", x, y, "", true )
+end
+
+function init( x, y )
+	local r = math.floor(ProceduralRandom(x, y, 1, 5))
 	LoadPixelScene( "data/biome_impl/watercave_layout_"..r..".png", "", x, y, "", true )
 end
 

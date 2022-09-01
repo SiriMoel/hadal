@@ -16,6 +16,10 @@ if mountaincount == nil then
     GlobalsSetValue("hadalmountains", "0")
     mountaincount = 0
 end
+if mountaincount >= 8 then
+    GlobalsSetValue("hadalmountains", "8")
+    mountaincount = 8
+end
 
 local om = 1.2
 local orbreq = 0 + (mountaincount * om)
