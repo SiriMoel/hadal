@@ -13,6 +13,7 @@ xml:add_children(nxml.parse_many[[
 	<Biome height_index="0" color="ffe4104c" biome_filename="mods/hadal/files/biome/temple_end/temple.xml" />
 	<Biome height_index="0" color="ff826d82" biome_filename="mods/hadal/files/biome/pyramid/boss_arena.xml" />
 	<Biome height_index="10" color="ff8e3d3e" biome_filename="data/biome/tower/solid_wall_tower.xml" />
+	<Biome height_index="0" color="ffff0061" biome_filename="mods/hadal/files/biome/darkcave/darkcave.xml" /> 
 	<Biome height_index="0" color="ffa17fff" biome_filename="mods/hadal/files/biome/maproom/maproom.xml" /> 
 ]])
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))

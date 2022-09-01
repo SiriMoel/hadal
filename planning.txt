@@ -1,6 +1,6 @@
 need to make kolmi room functional and load and yes
 
-ORBS (8 total required to enter final stage)
+ORBS (6? total required to enter final stage)
 possibly make orbs heal to full health?
 
 00 floating island DONE
