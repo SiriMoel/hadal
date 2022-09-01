@@ -4,9 +4,9 @@
     <!-- add spliced pixel scenes here  -->
     <File>data/biome_impl/spliced/lavalake2.xml</File>
 
-    <!--<File>data/biome_impl/spliced/skull_in_desert.xml</File>
+    <!--<File>data/biome_impl/spliced/skull_in_desert.xml</File>-->
 
-    <File>data/biome_impl/spliced/boss_arena.xml</File>-->
+    <File>data/biome_impl/spliced/boss_arena.xml</File>
 	
     <File>data/biome_impl/spliced/tree.xml</File>
 
