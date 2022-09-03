@@ -11,8 +11,8 @@
 	</_Transform>
 
     <BossDragonComponent
-        speed="6"
-		speed_hunt="9"
+        speed="5"
+		speed_hunt="7"
 		acceleration="0.55"
 		direction_adjust_speed="0.006"
 		direction_adjust_speed_hunt="0.01"
@@ -77,67 +77,34 @@
     <SpriteComponent 
 		_enabled="1" 
 		alpha="1" 
-		image_file="mods/hadal/files/entities/animals/glomb/sprite/glomb_head.xml" 
-		rect_animation="eat" 
-		next_rect_animation="eat" 
-		offset_x="0" 
-		offset_y="0" 
+		image_file="mods/hadal/files/entities/animals/glomb/sprite/head.png" 
+		next_rect_animation="" 
+		offset_x="18" 
+		offset_y="10" 
 		update_transform="0"
-		z_index="-0.1"
 		 >
 	</SpriteComponent>
+	<!--<SpriteComponent 
+		_enabled="1" 
+		alpha="1" 
+		image_file="mods/hadal/files/entities/animals/glomb/sprite/body.png" 
+		next_rect_animation="" 
+		offset_x="18" 
+		offset_y="10" 
+		update_transform="0"
+		 >
+	</SpriteComponent-->
+	<SpriteComponent
+		_enabled="1" 
+		alpha="1" 
+		image_file="mods/hadal/files/entities/animals/glomb/sprite/tail.png" 
+		next_rect_animation="" 
+		offset_x="18" 
 
-    <SpriteComponent 
-		_enabled="1" 
-		alpha="1" 
-		image_file="mods/hadal/files/entities/animals/glomb/sprite/glomb_body.xml" 
-		rect_animation="eat" 
-		next_rect_animation="eat" 
-		offset_x="0" 
-		offset_y="0" 
+		offset_y="10" 
 		update_transform="0"
-		z_index="-0.11"
 		 >
-	</SpriteComponent>
-    
-    <SpriteComponent 
-		_enabled="1" 
-		alpha="1" 
-		image_file="mods/hadal/files/entities/animals/glomb/sprite/glomb_body.xml" 
-		rect_animation="eat" 
-		next_rect_animation="eat" 
-		offset_x="0" 
-		offset_y="0" 
-		update_transform="0"
-		z_index="-0.12"
-		 >
-	</SpriteComponent>
-
-    <SpriteComponent 
-		_enabled="1" 
-		alpha="1" 
-		image_file="mods/hadal/files/entities/animals/glomb/sprite/glomb_body.xml" 
-		rect_animation="eat" 
-		next_rect_animation="eat" 
-		offset_x="0" 
-		offset_y="0" 
-		update_transform="0"
-		z_index="-0.13"
-		 >
-	</SpriteComponent>
-    
-    <SpriteComponent 
-		_enabled="1" 
-		alpha="1" 
-		image_file="mods/hadal/files/entities/animals/glomb/sprite/glomb_tail.xml" 
-		rect_animation="eat" 
-		next_rect_animation="eat" 
-		offset_x="0" 
-		offset_y="0" 
-		update_transform="0"
-		z_index="-0.14"
-		 >
-	</SpriteComponent>
+	</SpriteComponent> <!--offset_x="7" -->
 
     <SpriteComponent 
 		_tags="health_bar_back,ui,no_hitbox"

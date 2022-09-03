@@ -29,6 +29,8 @@ ModTextFileSetContent( "data/entities/animals/boss_wizard/death.lua", ModTextFil
 ModTextFileSetContent( "data/entities/animals/boss_ghost/death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_ghost_death.lua") )
 ModTextFileSetContent( "data/scripts/items/orb_pickup.lua", ModTextFileGetContent("mods/hadal/files/set/orb_pickup.lua") )
 ModTextFileSetContent( "data/scripts/items/drop_money.lua", ModTextFileGetContent("mods/hadal/files/set/drop_money.lua") )
+ModTextFileSetContent( "data/biome_impl/spliced/boss_arena.xml", ModTextFileGetContent("mods/hadal/files/set/pixel_scene_boss_arena.xml") )
+ModTextFileSetContent( "data/scripts/biomes/boss_arena.lua", ModTextFileGetContent("mods/hadal/files/set/biome_script_boss_arena.lua") )
 
 --biome script appends
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )
