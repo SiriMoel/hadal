@@ -13,6 +13,7 @@ xml:add_children(nxml.parse_many[[
 	<Biome height_index="0" color="ffe4104c" biome_filename="mods/hadal/files/biome/temple_end/temple.xml" />
 	<Biome height_index="0" color="ff826d82" biome_filename="mods/hadal/files/biome/pyramid/boss_arena.xml" />
 	<Biome height_index="10" color="ff8e3d3e" biome_filename="data/biome/tower/solid_wall_tower.xml" />
+	<Biome height_index="0" color="ffff0061" biome_filename="mods/hadal/files/biome/darkcave/darkcave.xml" /> 
 	<Biome height_index="0" color="ffa17fff" biome_filename="mods/hadal/files/biome/maproom/maproom.xml" /> 
 ]])
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
@@ -25,12 +26,14 @@ ModTextFileSetContent( "data/entities/animals/boss_alchemist/death.lua", ModText
 ModTextFileSetContent( "data/entities/animals/boss_limbs/boss_limbs_death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_limbs_death.lua") )
 ModTextFileSetContent( "data/biome/_pixel_scenes.xml", ModTextFileGetContent("mods/hadal/files/set/_pixel_scenes.xml") )
 ModTextFileSetContent( "data/entities/animals/boss_centipede/boss_centipede.xml", ModTextFileGetContent("mods/hadal/files/set/boss_centipede.xml") )
-ModTextFileSetContent( "data/entities/animals/boss_wizard/death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_wizard_death.lua") )
+ModTextFileSetContent( "data/entities/animals/boss_wizard/death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_wizard_death.lua" ) )
+ModTextFileSetContent( "data/entities/animals/boss_robot/death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_robot_death.lua") )
 ModTextFileSetContent( "data/entities/animals/boss_ghost/death.lua", ModTextFileGetContent("mods/hadal/files/set/boss_ghost_death.lua") )
 ModTextFileSetContent( "data/scripts/items/orb_pickup.lua", ModTextFileGetContent("mods/hadal/files/set/orb_pickup.lua") )
 ModTextFileSetContent( "data/scripts/items/drop_money.lua", ModTextFileGetContent("mods/hadal/files/set/drop_money.lua") )
 ModTextFileSetContent( "data/biome_impl/spliced/boss_arena.xml", ModTextFileGetContent("mods/hadal/files/set/pixel_scene_boss_arena.xml") )
 ModTextFileSetContent( "data/scripts/biomes/boss_arena.lua", ModTextFileGetContent("mods/hadal/files/set/biome_script_boss_arena.lua") )
+ModTextFileSetContent( "data/entities/projectiles/deck/machinegun_bullet.xml", ModTextFileGetContent("mods/hadal/files/set/machinegun_bullet.xml") )
 
 --biome script appends
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )

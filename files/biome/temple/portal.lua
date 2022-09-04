@@ -16,8 +16,13 @@ if mountaincount == nil then
     GlobalsSetValue("hadalmountains", "0")
     mountaincount = 0
 end
+if mountaincount >= 8 then
+    GlobalsSetValue("hadalmountains", "8")
+    mountaincount = 8
+end
 
-local orbreq = 0 + (mountaincount * 1.3)
+local om = 1.2
+local orbreq = 0 + (mountaincount * om)
 
 -- destination coords
 local dx = x
@@ -31,7 +36,7 @@ if ModSettingGet( "hadal_difficulty.require_orbs" ) then
         --SPAWN STEVE TIMER (if player is still in mountain by expiration, spawn steve to evict the player)
         EntityLoad( "mods/hadal/files/biome/temple/steve_timer.xml", dx, dy )
         mountaincount = mountaincount + 1
-        local neworbreq = math.ceil(0 + (mountaincount * 1.3))
+        local neworbreq = math.ceil(0 + (mountaincount * om))
         GamePrint("You have been to " .. mountaincount .. " Holy Mountains now." )
         GamePrint("You will need " .. tostring(neworbreq) .. " orbs to enter the next Mountain.")
         GlobalsSetValue("hadalmountains", tostring(mountaincount))
