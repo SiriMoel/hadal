@@ -24,7 +24,7 @@ function lusca_curse( activity, entity )
     if chance == nil then return end
     local cursenum = math.random(1, chance)
     --GamePrint("CURSE FUNCTION RAN, " .. cursenum) -- testing
-    if cursenum == 1 then
+    if cursenum == 2 then
         cursed = true
     end
     if cursed == true then -- you are cursed
@@ -95,7 +95,8 @@ cursedebuffs = {
         t = 4,
         message = "NYI",
         func = function()
-
+            local player = EntityGetWithTag("player_unit")[1]
+            EntityAddRandomStains( player, 10, 1000 )
         end,
     },
     {

@@ -1,7 +1,7 @@
 ModLuaFileAppend( "data/scripts/perks/perk_list.lua", "mods/hadal/files/perk_list_appends.lua")
 ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/hadal/files/actions_appends.lua" )
 ModMagicNumbersFileAdd( "mods/hadal/files/magic_numbers.xml" ) 
-ModMaterialsFileAdd("mods/hadal/files/materials.xml")
+ModMaterialsFileAdd("mods/h/files/materials.xml")
 
 local nxml = dofile_once("mods/hadal/lib/nxml.lua")
 
@@ -15,6 +15,7 @@ xml:add_children(nxml.parse_many[[
 	<Biome height_index="10" color="ff8e3d3e" biome_filename="data/biome/tower/solid_wall_tower.xml" />
 	<Biome height_index="0" color="ffff0061" biome_filename="mods/hadal/files/biome/darkcave/darkcave.xml" /> 
 	<Biome height_index="0" color="ffa17fff" biome_filename="mods/hadal/files/biome/maproom/maproom.xml" /> 
+	<Biome height_index="0" color="ffffba00" biome_filename="mods/hadal/files/biome/glomb/glomb_arena.xml" />
 ]])
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
 

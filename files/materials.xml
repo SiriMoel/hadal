@@ -1,35 +1,28 @@
 <Materials>
 
-    <CellData
-	name="hadal_templerock_static"
+	<CellData
+	name="templerock_static"
 	ui_name="$mat_templerock_static"
 	tags="[static],[indestructible],[alchemy],[solid],[earth]"
 	burnable="0"
 	density="10"
 	cell_type="liquid"
-	wang_color="ff786C50"
+	wang_color="ff6F5439"
 	liquid_gravity="1.2"
 	liquid_sand="1"
 	liquid_static="1"
 	solid_static_type="1"
 	on_fire="0"
 	wang_noise_percent="0.15"
-	hp="100000" 
+	hp="10000" 
 	platform_type="1"
-	durability="140"
+	durability="14"
 	audio_physics_material_wall="gravel"
 	audio_physics_material_solid="rock"
 	>
     <Graphics
 		texture_file="data/materials_gfx/templerock.png"
-		
-	>
-    </Graphics>
-  </CellData>
-
-</Materials>
-
-<!--color="ff6F5439"
+		color="ff6F5439"
 		pixel_all_around="ff6F5439"
 
 		pixel_lonely="ff6F5439"
@@ -43,4 +36,9 @@
 		pixel_right="ff543F2B"
 		pixel_bottom="ff543F2B"
 		pixel_bottom_right="ff543F2B"
--->
+	>
+    </Graphics>
+  </CellData>
+
+
+</Materials>

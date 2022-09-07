@@ -11,18 +11,30 @@ function remove_perk( perk_name )
 	end
 end
 
-remove_perk("INVISIBILITY")
+--immunities
 remove_perk("PROTECTION_FIRE")
 remove_perk("PROTECTION_EXPLOSION")
 remove_perk("PROTECTION_MELEE")
 remove_perk("PROTECTION_ELECTRICITY")
 remove_perk("PROTECTION_RADIOACTIVITY")
+
+--respawns
 remove_perk("RESPAWN")
 remove_perk("SAVING_GRACE")
+
+--scuffed immunities 
+--[[
 remove_perk("EXPLODING_CORPSES")
 remove_perk("ELECTRICITY")
+remove_perk("BLEED_OIL") 
+]]--
+
+--irrelevant in hadal
 remove_perk("PEACE_WITH_GODS")
-remove_perk("NO_WAND_EDITING")
-remove_perk("EDIT_WANDS_EVERYWHERE")
 remove_perk("PERKS_LOTTERY")
 remove_perk("EXTRA_PERK")
+
+--other
+remove_perk("NO_WAND_EDITING")
+remove_perk("EDIT_WANDS_EVERYWHERE")
+--remove_perk("INVISIBILITY")

@@ -28,7 +28,7 @@
 		new_hunt_target_check_every="240"
 		new_random_target_check_every="240"
 		ragdoll_filename=""
-		jump_cam_shake="20" 
+		jump_cam_shake="10" 
 		projectile_1=""
 		projectile_2=""
     ></BossDragonComponent>
@@ -166,18 +166,6 @@
 		set_speed_parameter="1"
 		auto_play="1">
 	</AudioLoopComponent>
-
-    <AreaDamageComponent
-		aabb_min.x="-72" 
-		aabb_min.y="-72" 
-		aabb_max.x="72" 
-		aabb_max.y="72" 
-		damage_per_frame="0.24"
-		update_every_n_frame="4"
-		entities_with_tag="mortal"
-		damage_type="DAMAGE_CURSE"
-		>
-	</AreaDamageComponent>
 	
 	<VariableStorageComponent
 		name="shooter_part"
@@ -189,5 +177,12 @@
 		script_death="mods/hadal/files/entities/animals/glomb/death.lua"
 		>
 	</LuaComponent>
+
+	<LuaComponent
+			script_source_file="mods/hadal/files/entities/animals/glomb/orb_fire.lua"
+			execute_every_n_frame="60"
+			execute_times="-1"
+			>
+		</LuaComponent>
 
 </Entity>

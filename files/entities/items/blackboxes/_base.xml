@@ -1,6 +1,4 @@
 <Entity tags="blackbox">
-	<BookComponent>
-	</BookComponent>
 
 	<UIInfoComponent
 		name="BLACKBOX"

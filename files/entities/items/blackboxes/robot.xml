@@ -12,7 +12,17 @@
 		
 		<ItemComponent
 			item_name="Blackbox"
-			ui_description=""
+			ui_description=
+			"
+			Nautilus 17 (AI drone). Blackbox data.
+			* / [
+			Major hull trauma detected at stern. Cause: unknown.
+			Scans suggest environment has been vastly changed.
+			Deploying onboard drone - 'Kolmisilmän silmä'
+			Nautilus 17 offline. Cause: Unknown.
+			Blackbox data recorded.
+			] \ *
+			"
 			>
 		</ItemComponent>
 		
