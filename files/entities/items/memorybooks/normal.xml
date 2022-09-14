@@ -1,0 +1,27 @@
+<Entity tags="hadalbook">
+	<Base file="mods/files/entities/items/memorybooks/_base.xml">
+		<BookComponent
+			_enabled="0"
+			>
+		</BookComponent>
+
+		<UIInfoComponent
+			name="Memory Book"
+			>
+		</UIInfoComponent>
+		
+		<ItemComponent
+			item_name="Memory Book"
+			ui_description=
+			"
+			PLACEHOLDER
+			"
+			>
+		</ItemComponent>
+		
+		<AbilityComponent
+			ui_name="Memory Book"
+			>
+		</AbilityComponent>
+	</Base>
+</Entity>

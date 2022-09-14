@@ -1,10 +1,12 @@
 ModLuaFileAppend( "data/scripts/perks/perk_list.lua", "mods/hadal/files/perk_list_appends.lua")
 ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/hadal/files/actions_appends.lua" )
+ModLuaFileAppend( "data/scripts/director_helpers.lua", "mods/hadal/files/director_helpers_appends.lua")
 ModMagicNumbersFileAdd( "mods/hadal/files/magic_numbers.xml" ) 
 ModMaterialsFileAdd("mods/h/files/materials.xml")
 
 local nxml = dofile_once("mods/hadal/lib/nxml.lua")
 
+--biomes
 local content = ModTextFileGetContent("data/biome/_biomes_all.xml")
 local xml = nxml.parse(content)
 xml:add_children(nxml.parse_many[[
@@ -35,6 +37,7 @@ ModTextFileSetContent( "data/scripts/items/drop_money.lua", ModTextFileGetConten
 ModTextFileSetContent( "data/biome_impl/spliced/boss_arena.xml", ModTextFileGetContent("mods/hadal/files/set/pixel_scene_boss_arena.xml") )
 ModTextFileSetContent( "data/scripts/biomes/boss_arena.lua", ModTextFileGetContent("mods/hadal/files/set/biome_script_boss_arena.lua") )
 ModTextFileSetContent( "data/entities/projectiles/deck/machinegun_bullet.xml", ModTextFileGetContent("mods/hadal/files/set/machinegun_bullet.xml") )
+ModTextFileSetContent( "data/scripts/biomes/boss_victoryroom.lua", ModTextFileGetContent("mods/hadal/files/set/endroom.lua") )
 
 --biome script appends
 ModLuaFileAppend( "data/scripts/biomes/coalmine.lua", "mods/hadal/files/biome_append/coalmine.lua" )
@@ -71,7 +74,16 @@ function OnPlayerSpawned( player_entity )
 	GlobalsSetValue( key, "yes" )
 
 	local x, y = EntityGetTransform(player_entity)
-	--EntityLoad("mods/hadal/files/entities/animals/glomb/glomb.xml", 0, 0) -- its glombin time
+	--EntityLoad("mods/hadal/files/entities/animals/glomb/glomb.xml", 0, 0)
+
+	EntityAddComponent( player_entity, "LuaComponent", 
+    {
+        script_source_file = "mods/hadal/player.lua",
+        execute_every_n_frame = "10",
+    } )
+
+	local px, py = EntityGetTransform( player_entity )
+	EntityLoad( "mods/hadal/files/entities/items/blackboxes/7.xml", px-30, py )
 
 	local damagemodels = EntityGetComponent( player_entity, "DamageModelComponent" )
 	if( damagemodels ~= nil ) then
@@ -101,6 +113,17 @@ function OnPlayerSpawned( player_entity )
             physics_hit = physics_hit * 2
 			radioactive = radioactive * 1.3
 			poison = poison * 2
+
+			if ModSettingGet("hadal_difficulty.onehit_fire") then
+				fire = fire * 10
+				radioactive = radioactive * 10
+				poison = poison * 10
+			end
+
+			if ModSettingGet("hadal_difficulty.onehit_melee") then
+				melee = melee * 10
+				physics_hit = physics_hit * 10
+			end
 
 			ComponentObjectSetValue( damagemodel, "damage_multipliers", "melee", tostring(melee) )
 			ComponentObjectSetValue( damagemodel, "damage_multipliers", "projectile", tostring(projectile) )

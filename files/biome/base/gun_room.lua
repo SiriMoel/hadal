@@ -32,5 +32,5 @@ end
 
 function spawn_essence(x, y)
 	EntityLoad( "data/entities/items/wands/experimental/experimental_wand_3.xml", x - 8, y + 12 )
-	EntityLoad("mods/hadal/files/entities/items/blackboxes/robot.xml", x + 8, y )
+	EntityLoad("mods/hadal/files/entities/items/blackboxes/6.xml", x + 8, y )
 end

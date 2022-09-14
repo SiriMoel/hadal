@@ -3,17 +3,35 @@ name="Hadal Difficulty"
 description="
 A difficulty mod aiming to provide a uniquely painful experience.
 
-[h1] What is Change? [/h1]
+[h1] What is changed? [/h1]
 [list]
 [*] Wands must be crafted
 [*] New Map (around twice the depth of vanilla map)
 [*] Orb requirement to progress through Holy Mountains
-[*] The Glomb
+[*] The Glomb (new boss)
+[*] Settings to enhance difficulty
 [/list]
 
 [h1] Questions [/h1]
 [b] How do I acquire wands? [/b]
-Wands can be acquired from vanilla crafting, 
+Wands can be acquired from vanilla puzzles, chests, enemies and crafting.
+To craft a wand you need a brace, handle and a core.
+The core determines the tier of the wand. To craft a wand just throw the 3 parts together.
+[b] Aren't Orbs difficult to find? [/b]
+Yes. However, most of the orbs in Hadal are acquired from killing bosses. 
+See the guide document for more information.
+[b] The Glomb? [/b]
+The Glomb. The arena to fight it can be accessed via a portal
+
+[h1] Credits [/h1]
+Me
+Gustavo - help with scripts, bug fixing, more
+Copi - thing
+Horscht - settings code
+
+[url=https://docs.google.com/document/d/1-CzW1OsGOb3TDa3nFJ10dm6SbNf5Yk13Z2bdyVPQXu0/edit?usp=sharing] Guide Document [/url] 
+[url=https://discord.gg/FKaRA9HMUq] Discord [/url] 
+[url=https://github.com/SiriMoel/hadal] Github [/url] 
 "
 tags="gameplay"
 dont_upload_folders=".assets" 

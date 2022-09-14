@@ -14,13 +14,12 @@
 			item_name="Blackbox"
 			ui_description=
 			"
-			Nautilus 17 (AI drone). Blackbox data.
+			Nautilus 6 Exosuit - Blackbox data.
 			* / [
-			Major hull trauma detected at stern. Cause: unknown.
-			Scans suggest environment has been vastly changed.
-			Deploying onboard drone - 'Kolmisilmän silmä'
-			Nautilus 17 offline. Cause: Unknown.
-			Blackbox data recorded.
+
+				[Target Anomaly detected within monitoring radius. Beginning recording.]
+				Detatching from exosuit.
+
 			] \ *
 			"
 			>

@@ -74,10 +74,14 @@ function init( x, y )
 end
 
 function spawn_items(x, y)
-	EntityLoad( "data/entities/items/pickup/heart.xml", x, y )
+	local e = math.random(1, 2)
+	if e == 2 then
+		EntityLoad( "data/entities/items/pickup/heart_fullhp.xml", x, y )
+	else
+		EntityLoad( "data/entities/items/pickup/spell_refresh.xml", x, y )
+	end
 end
 
 function spawn_props( x, y )
-	--EntityLoad( "data/entities/items/pickup/heart.xml", x+10, y )
-	EntityLoad( "data/entities/items/pickup/heart_fullhp.xml", x, y )
+	EntityLoad( "data/entities/items/pickup/heart.xml", x, y )	
 end

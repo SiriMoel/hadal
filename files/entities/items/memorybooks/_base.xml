@@ -1,7 +1,7 @@
-<Entity tags="hittable,blackbox">
+<Entity tags="hittable,memorybook">
 
 	<UIInfoComponent
-		name="BLACKBOX"
+		name="MEMORYBOOK"
 	></UIInfoComponent>
 
 	<PhysicsBodyComponent 
@@ -21,7 +21,7 @@
 	<PhysicsImageShapeComponent 
 		body_id="1"
 		centered="1"
-		image_file="mods/hadal/files/entities/items/blackboxes/sprite/blackbox_in_world.png"
+		image_file="mods/hadal/files/entities/items/memorybooks/sprite/s.png"
 		material="rock_box2d_hard"
 	></PhysicsImageShapeComponent>
 
@@ -46,7 +46,7 @@
 		max_child_items="0"
 		is_pickable="1"
 		is_equipable_forced="1"
-		ui_sprite="mods/hadal/files/entities/items/blackboxes/sprite/blackbox.png"
+		ui_sprite="mods/hadal/files/entities/items/memorybooks/sprite/s.png"
 		preferred_inventory="QUICK"
 		item_name="BLACKBOX"
 		ui_description="This is a blackbox."
@@ -57,7 +57,7 @@
 		_enabled="0"
 		offset_x="4"
 		offset_y="4"
-		image_file="mods/hadal/files/entities/items/blackboxes/sprite/blackbox_in_hand.png"
+		image_file="mods/hadal/files/entities/items/memorybooks/sprite/s.png"
 	></SpriteComponent>
 
 	<HitboxComponent 
@@ -80,7 +80,7 @@
 	
 	<ParticleEmitterComponent 
 		_tags="enabled_in_world,enabled_in_hand"
-		emitted_material_name="void_liquid"
+		emitted_material_name="spark_white"
 		offset.x="0"
 		offset.y="0"
 		x_pos_offset_min="0"
@@ -112,7 +112,7 @@
 	</ParticleEmitterComponent>
 	
 	<AbilityComponent
-		ui_name="BLACKBOX"
+		ui_name="MEMORYBOOK"
 		throw_as_item="1"
 		><gun_config
 			deck_capacity="0"

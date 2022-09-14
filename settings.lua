@@ -33,6 +33,27 @@ local settings = {
         value_default = true,
         scope = MOD_SETTING_SCOPE_RUNTIME,
     },
+	{
+        id = "onehit_fire",
+        label = "No Mistakes",
+        description = "Makes avoidable damage kill you significantly faster. Requires a run restart.",
+        value_default = false,
+        scope = MOD_SETTING_SCOPE_RUNTIME,
+    },
+	{
+        id = "onehit_melee",
+        label = "Squishy",
+        description = "Makes melee and physics damage kill you significantly faster. Requires a run restart.",
+        value_default = false,
+        scope = MOD_SETTING_SCOPE_RUNTIME,
+    },
+	{
+        id = "orbroomnine_setspawn",
+        label = "Orb Room 9 Set Location",
+        description = "Prevents Orb Room 9 from spawning in a random location. Requires a run restart.",
+        value_default = false,
+        scope = MOD_SETTING_SCOPE_RUNTIME,
+    },
 }
 
 function ModSettingsGuiCount()
