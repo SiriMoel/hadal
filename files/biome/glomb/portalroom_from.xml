@@ -11,7 +11,7 @@
     background_edge_priority="12"     
 
     wang_template_file="" 
-    lua_script="mods/hadal/files/glomb/portalroom_from.lua"
+    lua_script="mods/hadal/files/biome/glomb/portalroom_from.lua"
     wang_map_width="256"
     wang_map_height="256"
 	  limit_background_image="0"
