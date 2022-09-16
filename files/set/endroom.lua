@@ -35,6 +35,8 @@ function spawn_sampo_spot(x, y)
 	EntityLoad( "data/entities/animals/boss_centipede/boss_victoryroom_ambience.xml", x, y-30 )
 
     local oc = GameGetOrbCountThisRun()
+
+	if GameHasFlagRun("lusca_dead") ~= true then return end
 	
 	if oc == 0 then -- what
 		EntityLoad( "mods/hadal/entities/items/memorybooks/zero.xml", x, y-30 )
