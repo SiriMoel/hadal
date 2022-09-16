@@ -11,7 +11,7 @@ if targets ~= nil then
             local child = EntityLoad("mods/hadal/misc/hadalanimaleffects.xml", x, y)
             EntityAddChild(entity, child)
             EntityAddTag(entity, "hadalanimalinit")
-            if EntityGetName(entity) ~= "The Glomb" then
+            if EntityGetName(entity) ~= "The Glomb" or EntityGetName(entity) ~= "$animal_boss_robot" then
                 EntitySetName( entity, "Fylgja" )
             end
         end

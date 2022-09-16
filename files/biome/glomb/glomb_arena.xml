@@ -2,7 +2,7 @@
   <Topology 
     name="???"
     type="BIOME_WANG_TILE"
-	background_use_neighbor="0"
+	  background_use_neighbor="0"
     background_image="data/weather_gfx/background_crypt.png"
     background_edge_left="data/weather_gfx/edges/background_crypt_left.png"
     background_edge_right="data/weather_gfx/edges/background_crypt_right.png"

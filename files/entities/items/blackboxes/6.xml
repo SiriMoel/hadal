@@ -16,10 +16,12 @@
 			"
 			Nautilus 6 Exosuit - Blackbox data.
 			* / [
-
 				[Target Anomaly detected within monitoring radius. Beginning recording.]
 				Detatching from exosuit.
-
+				Entering Anomaly.
+				Sensors suggest surroundings have drastically changed.
+				Deploying drone.
+				[Drone deployed. Ending recording.]
 			] \ *
 			"
 			>

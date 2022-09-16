@@ -39,7 +39,7 @@ function announce_cursed( activity, level, entity )
     local activitytext = string.gsub(activity, "_", " ")
     GamePrintImportant( "The Glomb has cursed you!", "Your " .. activitytext .. " has caught the attention of the Glomb." )
     GamePrint( "Curse level now: " .. tostring(level) )
-    local x, y = EntityGetT1ransform( entity )
+    local x, y = EntityGetTransform( entity )
     local child_id = EntityLoad( "data/entities/misc/orb_boss_scream.xml", x, y )
     EntityAddChild( entity, child_id )
 end
@@ -51,7 +51,7 @@ function curse()
     if level > 5 then
         damagemodifiers(1.1)
         changemaxhp(0.9)
-        GamePrint("You now take 10% more damage and your max health has been lowered by 10%.")
+        GamePrint("You now permanently take 10% more damage have lost 10% of your max health.")
     else
         funccurse = curse["func"]
         GamePrint(curse["message"])
@@ -86,17 +86,20 @@ cursedebuffs = {
     },
     {
         t = 3,
-        message = "NYI",
+        message = "Its wormin time!",
         func = function()
-
+            local player = EntityGetWithTag("player_unit")[1]
+            local x, y = EntityGetTransform(player)
+            EntityLoad( "data/entities/projectiles/deck/worm_rain.xml", x, y )
+            EntityIngestMaterial( player, CellFactory_GetType("magic_liquid_worm_attractor"), 1000000 )
         end,
     },
     {
         t = 4,
-        message = "NYI",
+        message = "You can no longer heal.",
         func = function()
             local player = EntityGetWithTag("player_unit")[1]
-            EntityAddRandomStains( player, 10, 1000 )
+            no_healing()
         end,
     },
     {
@@ -104,7 +107,7 @@ cursedebuffs = {
         message = "Your are high.",
         func = function()
             local player = EntityGetWithTag("player_unit")[1]
-            EntityIngestMaterial( player, "fungi", 1000000 ) -- will this work? should i also add a shift function from fungal_shift.lua
+            EntityIngestMaterial( player, CellFactory_GetType("blood_fungi"), 1000000 ) -- will this work? should i also add a shift function from fungal_shift.lua
         end,
     },
 }
@@ -112,17 +115,33 @@ cursedebuffs = {
 activities = {
     {
         activity = "wand_crafting",
-        chance = 15,
+        chance = 10,
     },
     {
         activity = "orb_collecting",
-        chance = 7,
+        chance = 6,
     },
     {
         activity = "creature_killing",
-        chance = 100,
+        chance = 90,
     },
 }
+
+function reset_curse()
+    local player = EntityGetWithTag("player_unit")[1]
+    --1
+    damagemodifiers(0.8)
+    --2
+    changemaxhp(1.2)
+    --3
+    EntityRemoveIngestionStatusEffect( player, "worm_attractor" )
+    --4
+    yes_healing()
+    --5
+    EntityRemoveIngestionStatusEffect( player, "trip" )
+    
+    GamePrint("Curse lifted!")
+end
 
 function damagemodifiers( modifier )
     local player = EntityGetWithTag("player_unit")[1]
@@ -191,6 +210,30 @@ function changemaxhp( modifier )
 				
 			ComponentSetValue( damagemodel, "max_hp", max_hp )
 			ComponentSetValue( damagemodel, "hp", current_hp )
+		end
+	end
+end
+
+function no_healing()
+    local player = EntityGetWithTag("player_unit")[1]
+    local damagemodels = EntityGetComponent( player, "DamageModelComponent" )
+	if( damagemodels ~= nil ) then
+		for i,damagemodel in ipairs(damagemodels) do
+			local healing = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "healing" ) )
+            healing = healing * 0
+			ComponentObjectSetValue( damagemodel, "damage_multipliers", "healing", tostring(healing) )
+		end
+	end
+end
+
+function yes_healing()
+    local player = EntityGetWithTag("player_unit")[1]
+    local damagemodels = EntityGetComponent( player, "DamageModelComponent" )
+	if( damagemodels ~= nil ) then
+		for i,damagemodel in ipairs(damagemodels) do
+			local healing = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "healing" ) )
+            healing = healing + 1
+			ComponentObjectSetValue( damagemodel, "damage_multipliers", "healing", tostring(healing) )
 		end
 	end
 end

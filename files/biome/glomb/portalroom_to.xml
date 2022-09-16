@@ -1,0 +1,29 @@
+<Biome>
+  <Topology 
+    name="???"
+	  type="BIOME_WANG_TILE"
+    background_use_neighbor="0"
+    background_image="data/weather_gfx/background_crypt.png"
+    background_edge_left="data/weather_gfx/edges/background_crypt_left.png"
+    background_edge_right="data/weather_gfx/edges/background_crypt_right.png"
+    background_edge_top="data/weather_gfx/edges/background_crypt_top.png"
+    background_edge_bottom="data/weather_gfx/edges/background_crypt_bottom.png"
+    background_edge_priority="12"     
+
+    wang_template_file="" 
+    lua_script="mods/hadal/files/glomb/portalroom_to.lua"
+    wang_map_width="256"
+    wang_map_height="256"
+	  limit_background_image="0"
+    coarse_map_force_terrain="1"
+    pixel_scene="1"
+    noise_biome_edges="0"
+    audio_ambience="temple">
+  </Topology>
+
+  <Materials 
+    name="temple" 
+     >
+   </Materials>
+</Biome>
+

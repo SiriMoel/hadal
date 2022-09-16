@@ -18,6 +18,9 @@ xml:add_children(nxml.parse_many[[
 	<Biome height_index="0" color="ffff0061" biome_filename="mods/hadal/files/biome/darkcave/darkcave.xml" /> 
 	<Biome height_index="0" color="ffa17fff" biome_filename="mods/hadal/files/biome/maproom/maproom.xml" /> 
 	<Biome height_index="0" color="ffffba00" biome_filename="mods/hadal/files/biome/glomb/glomb_arena.xml" />
+	<Biome height_index="0" color="ffc48c00" biome_filename="mods/hadal/files/biome/glomb/portalroom_to.xml" />
+	<Biome height_index="0" color="ffffcd4f" biome_filename="mods/hadal/files/biome/glomb/portalroom_from.xml" />
+	<Biome height_index="0" color="ffd69900" biome_filename="mods/hadal/files/biome/glomb/bossroom.xml" /> 
 ]])
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
 
@@ -109,10 +112,10 @@ function OnPlayerSpawned( player_entity )
 			drill = drill * 1.1
 			slice = slice * 1.1
 			ice = ice * 1.1
-            healing = healing * 0.75
-            physics_hit = physics_hit * 2
+            healing = healing * 1
+            physics_hit = physics_hit * 1.5
 			radioactive = radioactive * 1.3
-			poison = poison * 2
+			poison = poison * 1.5
 
 			if ModSettingGet("hadal_difficulty.onehit_fire") then
 				fire = fire * 10
