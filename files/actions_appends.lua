@@ -2,7 +2,7 @@ local to_insert = {
 	{
 		id          = "HADAL_CHAINSAW",
 		name 		= "$action_chainsaw",
-		description = "$actiondesc_chainsaw",
+		description = "A good tool for cutting meat. Thats about it.",
 		sprite 		= "data/ui_gfx/gun_actions/chainsaw.png",
 		sprite_unidentified = "data/ui_gfx/gun_actions/chainsaw_unidentified.png",
 		related_projectiles	= {"data/entities/projectiles/deck/chainsaw.xml"},

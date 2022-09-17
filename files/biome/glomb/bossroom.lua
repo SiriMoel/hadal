@@ -8,17 +8,12 @@ dofile( "mods/hadal/files/entities/items/templewands/_.lua" )
 dofile( "data/scripts/perks/perk.lua" )
 
 RegisterSpawnFunction( 0xffffeedd, "init" )
-RegisterSpawnFunction( 0xff00b665, "portal" )
 RegisterSpawnFunction( 0xffb6ffdf, "glomb" )
 
 function init( x, y, w, h )
 	LoadPixelScene( "mods/hadal/files/biome/glomb/portalroom.png", "", x, y, "mods/hada/files/biome/glomb/glomb_arena_background.png", true )
 end
 
-function portal( x, y )
-    EntityLoad( "mods/hadal/files/biome/glomb/portal_to.xml", x, y )
-end
-
 function glomb( x, y )
-	EntityLoad( "mods/hadal/files/entities/animals/glomb/glomb.xml" )
+	EntityLoad( "mods/hadal/files/entities/animals/glomb/glomb.xml", x, y )
 end

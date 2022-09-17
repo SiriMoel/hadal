@@ -29,8 +29,8 @@
 		count_max="45"
 		render_on_grid="1"
 		fade_based_on_lifetime="0"
-		area_circle_radius.min="15"
-		area_circle_radius.max="15"
+		area_circle_radius.min="12"
+		area_circle_radius.max="12"
 		cosmetic_force_create="1"
 		collide_with_grid="0"
 		airflow_force="0.051"
@@ -62,10 +62,18 @@
 	</ProjectileComponent>
     
     <GameAreaEffectComponent
-        radius="15"
+        radius="12"
         collide_with_tag="hittable"
         frame_length="1"
     ></GameAreaEffectComponent>
+
+	<HomingComponent
+		target_tag="homing_target"
+		homing_targeting_coeff="6"
+		detect_distance="50"
+		homing_velocity_multiplier="1"
+		>
+	</HomingComponent>
 
 	<VariableStorageComponent
 		name="projectile_file"

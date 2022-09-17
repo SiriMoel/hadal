@@ -4,6 +4,7 @@ dofile_once("data/scripts/biome_scripts.lua")
 dofile_once("data/scripts/lib/utilities.lua")
 
 RegisterSpawnFunction( 0xffffeedd, "init" )
+RegisterSpawnFunction( 0xff31d0b4, "spawn_essence" )
 
 function spawn_small_enemies( x, y ) end
 function spawn_big_enemies( x, y ) end
@@ -23,5 +24,13 @@ function spawn_potions( x, y ) end
 function spawn_wands( x, y ) end
 
 function init( x, y, w, h )
-	LoadPixelScene( "mods/hadal/files/biome/glomb/glomb_arena.png", "", x, y, "mods/hadal/files/biome/glomb/glomb_arena_background.png", true )
+	LoadPixelScene( "data/biome_impl/essenceroom.png", "data/biome_impl/essenceroom_visual.png", x, y, "data/biome_impl/essenceroom_background_with_diamond.png", true )
+end
+
+function spawn_orb(x, y)
+end
+
+function spawn_essence(x, y)
+	EntityLoad( "data/entities/items/wands/experimental/experimental_wand_3.xml", x - 8, y + 12 )
+	EntityLoad("mods/hadal/files/entities/items/blackboxes/6.xml", x + 8, y )
 end

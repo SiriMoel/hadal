@@ -190,7 +190,7 @@ function entity_load_camera_bound(entity_data, x, y, rand_x, rand_y)
 						end
 
                         --sirmole
-						if EntityHasTag("hadal_enemy_perk") == false then
+						if EntityHasTag(ev, "hadal_enemy_perk") == false then
 							EntityAddComponent( eid, "LuaComponent", { 
 								script_death = "mods/hadal/files/enemy_death.lua",
 								execute_every_n_frame = "-1",

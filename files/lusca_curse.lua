@@ -139,8 +139,6 @@ function reset_curse()
     yes_healing()
     --5
     EntityRemoveIngestionStatusEffect( player, "trip" )
-    
-    GamePrint("Curse lifted!")
 end
 
 function damagemodifiers( modifier )

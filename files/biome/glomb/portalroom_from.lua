@@ -11,7 +11,7 @@ RegisterSpawnFunction( 0xffffeedd, "init" )
 RegisterSpawnFunction( 0xff00b665, "portal" )
 
 function init( x, y, w, h )
-	LoadPixelScene( "mods/hadal/files/biome/glomb/portalroom.png", "", x, y, "mods/hada/files/biome/glomb/glomb_arena_background.png", true )
+	LoadPixelScene( "mods/hadal/files/biome/glomb/portalroomno.png", "", x, y, "mods/hada/files/biome/glomb/glomb_arena_background.png", true )
 end
 
 function portal( x, y )

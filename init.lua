@@ -21,6 +21,7 @@ xml:add_children(nxml.parse_many[[
 	<Biome height_index="0" color="ffc48c00" biome_filename="mods/hadal/files/biome/glomb/portalroom_to.xml" />
 	<Biome height_index="0" color="ffffcd4f" biome_filename="mods/hadal/files/biome/glomb/portalroom_from.xml" />
 	<Biome height_index="0" color="ffd69900" biome_filename="mods/hadal/files/biome/glomb/bossroom.xml" /> 
+	<Biome height_index="0" color="ff2d824b" biome_filename="mods/hadal/files/biome/gunroom/gun_room.xml" /> 
 ]])
 ModTextFileSetContent("data/biome/_biomes_all.xml", tostring(xml))
 
@@ -79,11 +80,11 @@ function OnPlayerSpawned( player_entity )
 	local x, y = EntityGetTransform(player_entity)
 	--EntityLoad("mods/hadal/files/entities/animals/glomb/glomb.xml", 0, 0)
 
-	EntityAddComponent( player_entity, "LuaComponent", 
+	--[[EntityAddComponent( player_entity, "LuaComponent", 
     {
-        script_source_file = "mods/hadal/player.lua",
+        script_source_file = "mods/hadal/files/player.lua",
         execute_every_n_frame = "10",
-    } )
+    } )]]--
 
 	local px, py = EntityGetTransform( player_entity )
 	EntityLoad( "mods/hadal/files/entities/items/blackboxes/7.xml", px-30, py )

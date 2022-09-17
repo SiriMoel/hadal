@@ -74,7 +74,7 @@ function init( x, y )
 end
 
 function spawn_items(x, y)
-	local e = math.random(1, 2)
+	local e = math.random(1, 3)
 	if e == 2 then
 		EntityLoad( "data/entities/items/pickup/heart_fullhp.xml", x, y )
 	else

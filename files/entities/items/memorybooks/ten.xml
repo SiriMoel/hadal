@@ -1,5 +1,5 @@
 <Entity tags="hadalbook">
-	<Base file="mods/files/entities/items/memorybooks/_base.xml">
+	<Base file="mods/hadal/files/entities/items/memorybooks/_base.xml">
 		<BookComponent
 			_enabled="0"
 			>
@@ -14,8 +14,7 @@
 			item_name="Memory Book"
 			ui_description=
 			"
-			PLACEHOLDER
-			"
+PLACEHOLDER"
 			>
 		</ItemComponent>
 		

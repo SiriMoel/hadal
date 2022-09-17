@@ -20,10 +20,10 @@ function damage_received( damage, desc, entity_who_caused, is_fatal )
 	local vy = 0 - math.sin( angle ) * 80
 
 	local proj = math.random(1, 3)
-    if proj == 3 then
-        shoot_projectile( entity_id, "mods/hadal/entities/animals/glomb/orb_damage_received_strong.xml", x, y, vx, vy )
+   if proj == 3 then
+        shoot_projectile( entity_id, "mods/hadal/files/entities/animals/glomb/orb_damage_received_strong.xml", x, y, vx, vy )
     else
-        shoot_projectile( entity_id, "mods/hadal/entities/animals/glomb/orb_damage_received.xml", x, y, vx, vy )
+        shoot_projectile( entity_id, "mods/hadal/files/entities/animals/glomb/orb_damage_received.xml", x, y, vx, vy )
     end
 	
 	local c = EntityGetComponent( entity_id, "SpriteComponent", "health_bar" )

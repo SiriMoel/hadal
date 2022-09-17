@@ -6,7 +6,7 @@ local pos_x, pos_y = EntityGetTransform( entity_id )
 -- check that we're only shooting every 10 frames
 if script_wait_frames( entity_id, 10 ) then  return  end
 
-local how_many = 5
+local how_many = 9
 local angle_inc = ( 2 * 3.14159 ) / how_many
 local theta = 0
 local length = 100

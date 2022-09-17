@@ -1,5 +1,5 @@
 <Entity tags="hadalbook">
-	<Base file="mods/files/entities/items/blackboxes/_base.xml">
+	<Base file="mods/hadal/files/entities/items/blackboxes/_base.xml">
 		<BookComponent
 			_enabled="0"
 			>
@@ -14,13 +14,11 @@
 			item_name="Blackbox"
 			ui_description=
 			"
-			Nautilus 7 Exosuit - Blackbox data.
-			* / [
-				[Target Anomaly detected within monitoring radius. Beginning recording.]
-				
-				[Ending recording.]
-			] \ *
-			"
+Nautilus 7 Exosuit - Blackbox data.
+* / [
+[Target Anomaly detected within monitoring radius. Beginning recording.]	
+[Ending recording.]
+] \ *"
 			>
 		</ItemComponent>
 		
