@@ -15,17 +15,14 @@ function lusca_curse( activity, entity )
         entity = EntityGetWithTag("player_unit")[1]
     end
     local chance = get_chance( activity )
-     -- perk to halve curse chance & perk to double curse chance code here (done)
     if GameHasFlagRun("luscacurse_half") then -- halves chance to be cursed
         chance = chance * 2
     end
     if GameHasFlagRun( "luscacurse_double" ) then -- double chance to be cursed
         chance = math.ceil(chance * 0.5)
     end
-    --mod setting for adjusting chance?
     if chance == nil then return end
     local cursenum = math.random(1, chance)
-    --GamePrint("CURSE FUNCTION RAN, " .. cursenum) -- testing
     if cursenum == 2 then
         cursed = true
     end
@@ -93,7 +90,6 @@ cursedebuffs = {
             local player = EntityGetWithTag("player_unit")[1]
             local x, y = EntityGetTransform(player)
             EntityLoad( "data/entities/projectiles/deck/worm_rain.xml", x, y )
-            --EntityIngestMaterial( player, CellFactory_GetType("magic_liquid_worm_attractor"), 1000000 )
             LoadGameEffectEntityTo( player, "data/entities/misc/effect_worm_attractor.xml" )
         end,
     },
@@ -110,7 +106,6 @@ cursedebuffs = {
         message = "The world has shifted.",
         func = function()
             local player = EntityGetWithTag("player_unit")[1]
-            --EntityIngestMaterial( player, CellFactory_GetType("blood_fungi"), 1000000 ) -- will this work? should i also add a shift function from fungal_shift.lua
             local x, y = EntityGetTransform(player)
             fungal_shift( player, x, y, false )
         end,
@@ -143,7 +138,7 @@ function reset_curse()
     --4
     yes_healing()
     --5
-    --EntityRemoveIngestionStatusEffect( player, "trip" )
+    -- i cant reverse this
 end
 
 function damagemodifiers( modifier )

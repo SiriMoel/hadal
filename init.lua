@@ -2,7 +2,6 @@ ModLuaFileAppend( "data/scripts/perks/perk_list.lua", "mods/hadal/files/perk_lis
 ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/hadal/files/actions_appends.lua" )
 ModLuaFileAppend( "data/scripts/director_helpers.lua", "mods/hadal/files/director_helpers_appends.lua")
 ModMagicNumbersFileAdd( "mods/hadal/files/magic_numbers.xml" ) 
-ModMaterialsFileAdd("mods/h/files/materials.xml")
 
 local nxml = dofile_once("mods/hadal/lib/nxml.lua")
 
