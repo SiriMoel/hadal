@@ -1,3 +1,5 @@
+dofile_once("data/scripts/magic/fungal_shift.lua")
+
 function lusca_curse( activity, entity )
     if GameHasFlagRun( "lusca_dead" ) == true then
         GlobalsSetValue( "lusca_curse", "0" )
@@ -51,7 +53,7 @@ function curse()
     if level > 5 then
         damagemodifiers(1.1)
         changemaxhp(0.9)
-        GamePrint("You now permanently take 10% more damage have lost 10% of your max health.")
+        GamePrint("You now permanently take 10% more damage and have lost 10% of your max health.")
     else
         funccurse = curse["func"]
         GamePrint(curse["message"])
@@ -86,17 +88,18 @@ cursedebuffs = {
     },
     {
         t = 3,
-        message = "Its wormin time!",
+        message = "Worms are a fan of you.",
         func = function()
             local player = EntityGetWithTag("player_unit")[1]
             local x, y = EntityGetTransform(player)
             EntityLoad( "data/entities/projectiles/deck/worm_rain.xml", x, y )
-            EntityIngestMaterial( player, CellFactory_GetType("magic_liquid_worm_attractor"), 1000000 )
+            --EntityIngestMaterial( player, CellFactory_GetType("magic_liquid_worm_attractor"), 1000000 )
+            LoadGameEffectEntityTo( player, "data/entities/misc/effect_worm_attractor.xml" )
         end,
     },
     {
         t = 4,
-        message = "You can no longer heal.",
+        message = "Healing is significantly reduced.",
         func = function()
             local player = EntityGetWithTag("player_unit")[1]
             no_healing()
@@ -104,10 +107,12 @@ cursedebuffs = {
     },
     {
         t = 5,
-        message = "Your are high.",
+        message = "The world has shifted.",
         func = function()
             local player = EntityGetWithTag("player_unit")[1]
-            EntityIngestMaterial( player, CellFactory_GetType("blood_fungi"), 1000000 ) -- will this work? should i also add a shift function from fungal_shift.lua
+            --EntityIngestMaterial( player, CellFactory_GetType("blood_fungi"), 1000000 ) -- will this work? should i also add a shift function from fungal_shift.lua
+            local x, y = EntityGetTransform(player)
+            fungal_shift( player, x, y, false )
         end,
     },
 }
@@ -119,11 +124,11 @@ activities = {
     },
     {
         activity = "orb_collecting",
-        chance = 6,
+        chance = 7,
     },
     {
         activity = "creature_killing",
-        chance = 90,
+        chance = 95,
     },
 }
 
@@ -138,7 +143,7 @@ function reset_curse()
     --4
     yes_healing()
     --5
-    EntityRemoveIngestionStatusEffect( player, "trip" )
+    --EntityRemoveIngestionStatusEffect( player, "trip" )
 end
 
 function damagemodifiers( modifier )
@@ -218,7 +223,7 @@ function no_healing()
 	if( damagemodels ~= nil ) then
 		for i,damagemodel in ipairs(damagemodels) do
 			local healing = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "healing" ) )
-            healing = healing * 0
+            healing = healing * 0.05
 			ComponentObjectSetValue( damagemodel, "damage_multipliers", "healing", tostring(healing) )
 		end
 	end
@@ -230,7 +235,7 @@ function yes_healing()
 	if( damagemodels ~= nil ) then
 		for i,damagemodel in ipairs(damagemodels) do
 			local healing = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "healing" ) )
-            healing = healing + 1
+            healing = healing * 0 + 1
 			ComponentObjectSetValue( damagemodel, "damage_multipliers", "healing", tostring(healing) )
 		end
 	end

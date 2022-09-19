@@ -105,7 +105,7 @@ function OnPlayerSpawned( player_entity )
 			local radioactive = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "radioactive" ) )
 			local poison = tonumber(ComponentObjectGetValue( damagemodel, "damage_multipliers", "poison" ) )
 
-			melee = melee * 1.1
+			melee = melee * 1.2
 			projectile = projectile * 1.1
 			explosion = explosion * 1.1
 			electricity = electricity * 1.3
@@ -114,9 +114,9 @@ function OnPlayerSpawned( player_entity )
 			slice = slice * 1.1
 			ice = ice * 1.1
             healing = healing * 1
-            physics_hit = physics_hit * 1.5
-			radioactive = radioactive * 1.3
-			poison = poison * 1.5
+            physics_hit = physics_hit * 1.3
+			radioactive = radioactive * 1.2
+			poison = poison * 1.3
 
 			if ModSettingGet("hadal_difficulty.onehit_fire") then
 				fire = fire * 10
