@@ -40,11 +40,11 @@ function spawn_sampo_spot(x, y)
 	
 	if oc == 0 then -- what
 		EntityLoad( "mods/hadal/files/entities/items/memorybooks/zero.xml", x, y-30 )
-	elseif oc <= 9 then -- this is the default one
+	elseif oc <= 6 then -- some orbs
 		EntityLoad( "mods/hadal/files/entities/items/memorybooks/normal.xml", x, y-30 )
-	elseif oc == 10 then -- all but no glomb
+	elseif oc > 6 and oc < 11 then -- some orbs
 		EntityLoad( "mods/hadal/files/entities/items/memorybooks/ten.xml", x, y-30 )
-	elseif oc == 11 then -- glomb
+	elseif oc == 11 then -- all + glomb
 		EntityLoad( "mods/hadal/files/entities/items/memorybooks/eleven.xml", x, y-30 )
 	elseif oc > 11 then -- this shouldnt be possible
 		EntityLoad( "mods/hadal/files/entities/items/memorybooks/elevenplus.xml", x, y-30 )

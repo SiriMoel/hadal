@@ -21,7 +21,7 @@
 	<PhysicsImageShapeComponent 
 		body_id="1"
 		centered="1"
-		image_file="mods/hadal/files/entities/items/memorybooks/sprite/s.png"
+		image_file="mods/hadal/files/entities/items/memorybooks/sprite/s_in_hand.png"
 		material="rock_box2d_hard"
 	></PhysicsImageShapeComponent>
 
@@ -57,7 +57,7 @@
 		_enabled="0"
 		offset_x="4"
 		offset_y="4"
-		image_file="mods/hadal/files/entities/items/memorybooks/sprite/s.png"
+		image_file="mods/hadal/files/entities/items/memorybooks/sprite/s_in_hand.png"
 	></SpriteComponent>
 
 	<HitboxComponent 
