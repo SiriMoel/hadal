@@ -88,10 +88,6 @@ function OnPlayerSpawned( player_entity )
 	local px, py = EntityGetTransform( player_entity )
 	EntityLoad( "mods/hadal/files/entities/items/blackboxes/7.xml", px-30, py )
 
-	EntityLoad( "mods/hadal/files/entities/items/wandcores/_handle.xml", px-30, py-10 )
-	EntityLoad( "mods/hadal/files/entities/items/wandcores/_brace.xml", px, py-10 )
-	EntityLoad( "mods/hadal/files/entities/items/wandcores/t1.xml", px+30, py-10 )
-
 	local damagemodels = EntityGetComponent( player_entity, "DamageModelComponent" )
 	if( damagemodels ~= nil ) then
 		for i,damagemodel in ipairs(damagemodels) do
