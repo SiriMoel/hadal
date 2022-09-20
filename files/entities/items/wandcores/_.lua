@@ -6,13 +6,14 @@ local core_id = GetUpdatedEntityID()
 local x, y = EntityGetTransform( core_id )
 local radius = 15
 
-local coretier = tonumber(string.match(string.match(EntityGetTags(GetUpdatedEntityID()), "wandcore_t%d+"), "%d+"))
+local tags = EntityGetTags(GetUpdatedEntityID())
+local coretier = tonumber(tags:match("wandcore_t(%d+)"))
 local handle = EntityGetInRadiusWithTag( x, y, radius, "wandhandle" )[1]
 local brace = EntityGetInRadiusWithTag( x, y, radius, "wandbrace" )[1]
 
 if coretier == nil then
-    print("coretier fel of")
-    return
+    coretier = math.random(1, 6)
+    Print("coretier was nil")
 end
 
 if handle ~= nil and brace ~= nil then

@@ -29,7 +29,7 @@
         sprite_file="data/items_gfx/machinegun.xml" 
         swim_propel_amount="0" 
         throw_as_item="0" 
-        ui_name="Rapid bolt wand" 
+        ui_name="Rapid bolt wand"
         use_gun_script="1" 
         >
         <gun_config 

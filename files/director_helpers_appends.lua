@@ -233,7 +233,7 @@ function entity_load_camera_bound(entity_data, x, y, rand_x, rand_y)
 			end
 
 			if( givewand ) then
-				enemy_give_wand( eid )
+				--enemy_give_wand( eid )
 			end
 			
 			local comps = EntityGetComponent( eid, "CameraBoundComponent" )
