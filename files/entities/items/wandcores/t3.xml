@@ -105,8 +105,10 @@
 	</ParticleEmitterComponent>
 
 	<LuaComponent
+		_tags="enabled_in_world"
 		script_source_file="mods/hadal/files/entities/items/wandcores/_.lua"
 		execute_every_n_frame="2"
+		execute_times="-1"
 		>
 	</LuaComponent>
 	

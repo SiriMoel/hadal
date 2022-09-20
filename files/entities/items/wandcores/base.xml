@@ -107,10 +107,10 @@
 		>
 	</ParticleEmitterComponent>
 
-	<LuaComponent
+	<!--<LuaComponent
 		script_source_file="mods/hadal/files/entities/items/wandcores/_.lua"
 		execute_every_n_frame="2"
 		>
-	</LuaComponent>
+	</LuaComponent-->
 
 </Entity>

@@ -42,8 +42,8 @@ remove_perk("EDIT_WANDS_EVERYWHERE")
 local to_insert = {
 	{
 		id = "HADAL_PROTECTION_FIRE",
-		ui_name = "$perk_protection_fire",
-		ui_description = "$perkdesc_protection_fire",
+		ui_name = "Fire Protection",
+		ui_description = "You take 50% less damage from fire.",
 		ui_icon = "data/ui_gfx/perk_icons/protection_fire.png",
 		perk_icon = "data/items_gfx/perks/protection_fire.png",
 		--game_effect = "PROTECTION_FIRE",
@@ -72,7 +72,7 @@ local to_insert = {
 	},
 	{
 		id = "HADAL_PROTECTION_EXPLOSION",
-		ui_name = "$perk_protection_explosion",
+		ui_name = "Explosion Protection",
 		ui_description = "You take 50% less damage from explosions.",
 		ui_icon = "data/ui_gfx/perk_icons/protection_explosion.png",
 		perk_icon = "data/items_gfx/perks/protection_explosion.png",
@@ -101,7 +101,7 @@ local to_insert = {
 	},
 	{
 		id = "HADAL_PROTECTION_MELEE",
-		ui_name = "$perk_protection_melee",
+		ui_name = "Melee Protection",
 		ui_description = "You take 50% less damage from melee.",
 		ui_icon = "data/ui_gfx/perk_icons/protection_melee.png",
 		perk_icon = "data/items_gfx/perks/protection_melee.png",
@@ -130,7 +130,7 @@ local to_insert = {
 	},
 	{
 		id = "HADAL_PROTECTION_ELECTRICITY",
-		ui_name = "$perk_protection_electricity",
+		ui_name = "Electricity Protection",
 		ui_description = "You take 50% less damage from electricity.",
 		ui_icon = "data/ui_gfx/perk_icons/protection_electricity.png",
 		perk_icon = "data/items_gfx/perks/protection_electricity.png",
@@ -157,9 +157,9 @@ local to_insert = {
 			end
 		end,
 	},
-	{
+	--[[{
 		id = "HADAL_PROTECTION_RADIOACTIVITY",
-		ui_name = "$perk_protection_RADIOACTIVITY",
+		ui_name = "Radioactivity Protection",
 		ui_description = "You take 50% less damage from radioactivity.",
 		ui_icon = "data/ui_gfx/perk_icons/protection_radioactivity.png",
 		perk_icon = "data/items_gfx/perks/protection_radioactivity.png",
@@ -185,7 +185,7 @@ local to_insert = {
 				end
 			end
 		end,
-	},
+	},]]--
 }
 
 for k,v in ipairs(to_insert) do
