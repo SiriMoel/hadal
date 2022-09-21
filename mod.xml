@@ -1,11 +1,7 @@
 <Mod
-	name="Hadal Difficulty"
-	description="Hadal Difficulty"
-	ui_newgame_name="Hadal Difficulty"
-	ui_newgame_description="A difficulty mod aiming to provide a uniquely painful experience."
-	ui_newgame_gfx_banner_bg="mods/hadal/files/menu_banner_background.png"
-	ui_newgame_gfx_banner_fg="mods/hadal/files/menu_banner_overlay.png"
-	request_no_api_restrictions="0" 
-	is_game_mode="1"
-	> 
+    name="Hadal Difficulty"
+    description="Hadal Difficulty"
+    request_no_api_restrictions="0" 
+    is_game_mode="0"
+    > 
 </Mod>
