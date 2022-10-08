@@ -1,0 +1,9 @@
+<Entity tags="location_fix">
+
+    <LuaComponent
+    script_source_file="mods/hadal/files/biome/temple/location_fix.lua"
+    execute_every_n_frame="1"
+    >
+    </LuaComponent>
+    
+</Entity>

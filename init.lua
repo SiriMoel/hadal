@@ -11,7 +11,13 @@ local xml = nxml.parse(content)
 xml:add_children(nxml.parse_many[[
 	<Biome height_index="0" color="ffaa0c10" biome_filename="mods/hadal/files/biome/temple/wall.xml" />
     <Biome height_index="0" color="ffce1016" biome_filename="mods/hadal/files/biome/temple/temple.xml" />
+	<Biome height_index="0" color="ffb80c29" biome_filename="mods/hadal/files/biome/temple/wall_left.xml" />
+	<Biome height_index="0" color="ffb80c3f" biome_filename="mods/hadal/files/biome/temple/wall_right.xml" /> 
+	<Biome height_index="0" color="ffb81c29" biome_filename="mods/hadal/files/biome/temple/wall_left_no.xml" />
+	<Biome height_index="0" color="ffb80c54" biome_filename="mods/hadal/files/biome/temple/wall_right_no.xml" />
+
 	<Biome height_index="0" color="ffe4104c" biome_filename="mods/hadal/files/biome/temple_end/temple.xml" />
+	
 	<Biome height_index="0" color="ff826d82" biome_filename="mods/hadal/files/biome/pyramid/boss_arena.xml" />
 	<Biome height_index="10" color="ff8e3d3e" biome_filename="data/biome/tower/solid_wall_tower.xml" />
 	<Biome height_index="0" color="ffff0061" biome_filename="mods/hadal/files/biome/darkcave/darkcave.xml" /> 

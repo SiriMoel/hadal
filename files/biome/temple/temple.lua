@@ -68,6 +68,7 @@ end
 
 function spawn_workshop( x, y )
 	EntityLoad( "data/entities/buildings/workshop.xml", x, y )
+	EntityLoad( "mods/hadal/files/biome/temple/location_fix.xml", x, y )
 end
 
 function spawn_workshop_extra( x, y )

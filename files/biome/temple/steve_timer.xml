@@ -1,7 +1,7 @@
 <Entity tags="stevetimer">
 
     <ProjectileComponent
-        lifetime="3600"
+        lifetime="7200"
     >
     </ProjectileComponent>
 

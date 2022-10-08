@@ -34,7 +34,7 @@ if ModSettingGet( "hadal_difficulty.require_orbs" ) then
         if player == nil then return end
         EntitySetTransform( player, dx, dy )
         --SPAWN STEVE TIMER (if player is still in mountain by expiration, spawn steve to evict the player)
-        EntityLoad( "mods/hadal/files/biome/temple/steve_timer.xml", dx, dy )
+        EntityLoad( "mods/hadal/files/biome/temple/steve_timer.xml", 240, dy )
         mountaincount = mountaincount + 1
         local neworbreq = math.ceil(0 + (mountaincount * om))
         GamePrint("You have been to " .. mountaincount .. " Holy Mountains now." )
